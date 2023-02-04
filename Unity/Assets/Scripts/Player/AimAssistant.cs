@@ -7,7 +7,6 @@ using System.Linq;
 public class AimAssistant : MonoBehaviour
 {
     [SerializeField] float aimRange = 10;
-    [SerializeField] int maxTargets = 64;
 
     [SerializeField] int enemyLayerID;
     LayerMask enemyLayer;
@@ -15,24 +14,6 @@ public class AimAssistant : MonoBehaviour
     private void Start()
     {
         enemyLayer = LayerMask.GetMask(LayerMask.LayerToName(enemyLayerID)); 
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            print(GetClosestEnemy().name);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            print(GetFarthestEnemy().name);
-        }
-
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            print(GetRandomEnemy().name);
-        }
     }
 
     public Transform GetClosestEnemy()
@@ -60,7 +41,7 @@ public class AimAssistant : MonoBehaviour
     public Transform GetFarthestEnemy()
     {
         Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, aimRange, enemyLayer);
-        Transform nearestTarget = null;
+        Transform farthestTarget = null;
 
         int len = targets.Length;
         float farthestDistance = 0;
@@ -71,12 +52,12 @@ public class AimAssistant : MonoBehaviour
 
             if (distance > farthestDistance)
             {
-                nearestTarget = targets[i].transform;
+                farthestTarget = targets[i].transform;
                 farthestDistance = distance;
             }
         }
 
-        return nearestTarget;
+        return farthestTarget;
     }
 
     public Transform GetRandomEnemy()
