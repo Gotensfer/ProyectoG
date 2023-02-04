@@ -6,6 +6,8 @@ using System.Linq;
 
 public class AimAssistant : MonoBehaviour
 {
+    public Transform proyectileHierarchyContainer;
+
     [SerializeField] float aimRange = 10;
 
     [SerializeField] int enemyLayerID;

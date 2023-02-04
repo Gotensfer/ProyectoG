@@ -21,7 +21,7 @@ public class Bone : BaseWeapon
 
             if (target != null)
             {
-                GameObject newProyectile = Instantiate(boneProyectilePrefab, transform.position, Quaternion.identity);
+                GameObject newProyectile = Instantiate(boneProyectilePrefab, transform.position, Quaternion.identity, aim.proyectileHierarchyContainer);
                 newProyectile.GetComponent<StraightProyectile>().Initialize(aim.GetAimDirection(transform, target));
             }
 
