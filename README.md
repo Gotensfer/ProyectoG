@@ -16,3 +16,9 @@ Y la carpeta de Fmod solo tiene un `.gitattributes`
 Finalmente la carpeta del proyecto se ve así 
 
 ![image](https://user-images.githubusercontent.com/66889936/216745470-7eea74cc-3b78-439f-9bdb-32f99a3c64c2.png)
+
+----
+Hotfix de 
+Unable to build: Settings instance has not been initialized. Unable to continue build
+
+https://qa.fmod.com/t/unable-to-build-settings-instance-has-not-been-initialized-unable-to-continue-build/19668/4
