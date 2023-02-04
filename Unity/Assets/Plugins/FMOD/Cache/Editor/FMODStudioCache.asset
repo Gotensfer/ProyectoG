@@ -42,10 +42,8 @@ MonoBehaviour:
   Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/try.bank
   Name: try
   StudioPath: bank:/try
-  lastModified: 638110582642796981
-  FileSizes:
-  - Name: Desktop
-    Value: 1436
+  lastModified: 638110583954254103
+  FileSizes: []
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -70,7 +68,7 @@ MonoBehaviour:
   - {fileID: 8108717056472242507}
   StringsBanks:
   - {fileID: 5798914085266576428}
-  cacheTime: 638110582642796981
+  cacheTime: 638110583954254103
   cacheVersion: 131601
 --- !u!114 &5798914085266576428
 MonoBehaviour:
@@ -87,9 +85,9 @@ MonoBehaviour:
   Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638110582642776980
+  lastModified: 638110583954254103
   FileSizes:
-  - Name: Desktop
+  - Name: 
     Value: 802
   Exists: 1
 --- !u!114 &8108717056472242507
@@ -107,8 +105,6 @@ MonoBehaviour:
   Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638110582642757033
-  FileSizes:
-  - Name: Desktop
-    Value: 1036
+  lastModified: 638110583954244144
+  FileSizes: []
   Exists: 1
