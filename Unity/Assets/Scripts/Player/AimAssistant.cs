@@ -78,4 +78,10 @@ public class AimAssistant : MonoBehaviour
         return randomTarget;
     }
 
+    public Vector2 GetAimDirection(Transform origin, Transform target)
+    {
+        Vector2 direction = (target.position - origin.position).normalized;
+        return direction;
+    }
+
 }
