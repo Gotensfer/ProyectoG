@@ -394,6 +394,75 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!1001 &444380331
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7501209125949480516, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_Name
+      value: Primitive age - QuickEnemy - Toothsabre (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1b34772cf302bfa46a90fda4cd95b5a3, type: 3}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,6 +556,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1199947108
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7501209125949480516, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_Name
+      value: Primitive age - QuickEnemy - Toothsabre (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1b34772cf302bfa46a90fda4cd95b5a3, type: 3}
 --- !u!1 &1248834896
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,6 +710,144 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1260938736
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7501209125949480516, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_Name
+      value: Primitive age - QuickEnemy - Toothsabre (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1b34772cf302bfa46a90fda4cd95b5a3, type: 3}
+--- !u!1001 &1910011063
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7501209125949480516, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_Name
+      value: Primitive age - QuickEnemy - Toothsabre (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501209125949480527, guid: 1b34772cf302bfa46a90fda4cd95b5a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1b34772cf302bfa46a90fda4cd95b5a3, type: 3}
 --- !u!1 &2055542850
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,6 +910,7 @@ GameObject:
   - component: {fileID: 2085404524}
   - component: {fileID: 2085404523}
   - component: {fileID: 2085404528}
+  - component: {fileID: 2085404530}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -801,6 +1078,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2085404530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085404521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 794501a34064cc94983c43e42ceda2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aimRange: 2000
+  maxTargets: 64
+  enemyLayerID: 6
 --- !u!1001 &7501209125242257619
 PrefabInstance:
   m_ObjectHideFlags: 0
