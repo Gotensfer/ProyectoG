@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3620857657532571914
+--- !u!114 &-3127878457613989287
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: -938478941
     Data4: 1318161918
   Banks:
-  - {fileID: -2171743346430151256}
+  - {fileID: 1435005143732102039}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -27,52 +27,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-2171743346430151256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/try.bank
-  m_EditorClassIdentifier: 
-  Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/try.bank
-  Name: try
-  StudioPath: bank:/try
-  lastModified: 638110616546831900
-  FileSizes:
-  - Name: Desktop
-    Value: 1436
-  Exists: 1
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 5798914085266576428}
-  - {fileID: 8108717056472242507}
-  - {fileID: -2171743346430151256}
-  EditorEvents:
-  - {fileID: -3620857657532571914}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: 8108717056472242507}
-  StringsBanks:
-  - {fileID: 5798914085266576428}
-  cacheTime: 638110616546831900
-  cacheVersion: 131601
---- !u!114 &5798914085266576428
+--- !u!114 &-281814907311300695
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,12 +42,57 @@ MonoBehaviour:
   Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638110616546831900
+  lastModified: 638110618060096322
   FileSizes:
   - Name: Desktop
     Value: 802
   Exists: 1
---- !u!114 &8108717056472242507
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -281814907311300695}
+  - {fileID: 4162615153985300034}
+  - {fileID: 1435005143732102039}
+  EditorEvents:
+  - {fileID: -3127878457613989287}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 4162615153985300034}
+  StringsBanks:
+  - {fileID: -281814907311300695}
+  cacheTime: 638110618060126299
+  cacheVersion: 131601
+--- !u!114 &1435005143732102039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/try.bank
+  m_EditorClassIdentifier: 
+  Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/try.bank
+  Name: try
+  StudioPath: bank:/try
+  lastModified: 638110618060126299
+  FileSizes:
+  - Name: Desktop
+    Value: 1436
+  Exists: 1
+--- !u!114 &4162615153985300034
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,7 +107,7 @@ MonoBehaviour:
   Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638110616546821923
+  lastModified: 638110618060086318
   FileSizes:
   - Name: Desktop
     Value: 1036
