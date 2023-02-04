@@ -40,13 +40,7 @@ public class Enemy_Generate : MonoBehaviour
         {
             next_enemy_time = 0;
             Generate();
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            AgeManager.age++;
-            print(AgeManager.age);
-        }
-        
+        }        
     }
 
    

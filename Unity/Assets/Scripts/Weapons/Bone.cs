@@ -10,6 +10,13 @@ public class Bone : BaseWeapon
     {
         base.Awake();
         StartCoroutine(UseWeapon());
+        AgeManager.onAgeChange.AddListener(DeleteSelf);
+    }
+
+    void DeleteSelf()
+    {
+        AgeManager.onAgeChange.RemoveListener(DeleteSelf);
+        Destroy(gameObject);
     }
 
     IEnumerator UseWeapon()
