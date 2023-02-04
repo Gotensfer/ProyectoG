@@ -127,5 +127,4 @@
 *.rar lfs
 *.tar lfs
 
-# Firebase
-*.bundle lfs
+*.bundle text eol=lf
