@@ -64,15 +64,15 @@ MonoBehaviour:
     HasValue: 0
   displaySortOrder: 0
   childIdentifiers:
-  - c88d16e5272a4e241b0ef0ac2e53b73d
   - fd7c55dab0fce234b8c25f6ffca523c1
-  - 2c5177b11d81d824dbb064f9ac8527da
-  - e7a046c753c3c3d4aacc91f6597f310d
   - 52eb9df5db46521439908db3a29a1bbb
-  - b7716510a1f36934c87976f3a81dbf3d
+  - c88d16e5272a4e241b0ef0ac2e53b73d
+  - e7a046c753c3c3d4aacc91f6597f310d
   - 0f8eb3f400726694eb47beb1a9f94ce8
   - 46fbfdf3fc43db0458918377fd40293e
+  - 2c5177b11d81d824dbb064f9ac8527da
   - 2fea114e74ecf3c4f920e1d5cc1c4c40
+  - b7716510a1f36934c87976f3a81dbf3d
   codecChannels:
     Value: []
     HasValue: 0
@@ -625,10 +625,10 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   switchSettingsMigration: 1
-  HasSourceProject: 0
-  HasPlatforms: 0
+  HasSourceProject: 1
+  HasPlatforms: 1
   sourceProjectPath: ../ProyectoG Fmod/ProyectoG/ProyectoG.fspro
-  sourceBankPath: ../ProyectoG Fmod/ProyectoG/Build/Desktop
+  sourceBankPath: ../ProyectoG Fmod/ProyectoG/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -667,17 +667,17 @@ MonoBehaviour:
   HideSetupWizard: 1
   LastEventReferenceScanVersion: 131601
   Platforms:
-  - {fileID: -4421786233818997103}
   - {fileID: -9001840681923574084}
-  - {fileID: -5233035152406112210}
   - {fileID: -8329802289086024629}
-  - {fileID: -2609413097396489165}
-  - {fileID: -3271282992803986300}
   - {fileID: -5967085037586569434}
-  - {fileID: 2424004924347326797}
+  - {fileID: -5233035152406112210}
+  - {fileID: -4421786233818997103}
+  - {fileID: -3271282992803986300}
   - {fileID: -2926054615142339437}
   - {fileID: -2817353270454134119}
+  - {fileID: -2609413097396489165}
   - {fileID: 2093888692406036444}
+  - {fileID: 2424004924347326797}
   MigratedPlatforms: 0c000000150000000b0000000a00000009000000120000000800000005000000060000000200000001000000
 --- !u!114 &2093888692406036444
 MonoBehaviour:
