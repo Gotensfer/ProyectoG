@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class PlayerVitals : MonoBehaviour
@@ -14,10 +15,18 @@ public class PlayerVitals : MonoBehaviour
     public int Health { get => health; }
 
     [SerializeField] int maxHealth;
-    public int MaxHealth { get => maxHealth; set => maxHealth = value; }
+    public int MaxHealth { get => maxHealth; }
 
     [SerializeField] int level;
     public int Level { get => level; }
+
+    [SerializeField] Age age;
+    public Age Era { get => age; }
+
+    private void Start()
+    {
+        health = maxHealth;
+    }
 
     public void ReceiveDamage(int amount)
     {
@@ -59,5 +68,13 @@ public class PlayerVitals : MonoBehaviour
     {
         level++;
         experience = 0;
+
+        // Operación de módulo ya que cada 10 niveles se cambia de era
+        if (level%10 == 0)
+        {
+            AgeManager.age++; // Sorprendentemente, se puede realizar aritmetica a los enums lmao
+            AgeManager.onAgeChange.Invoke();
+            health = maxHealth;
+        }
     }
 }
