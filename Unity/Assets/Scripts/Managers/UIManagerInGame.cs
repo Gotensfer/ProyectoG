@@ -8,9 +8,13 @@ public class UIManagerInGame : MonoBehaviour
 {
     [SerializeField] Button ScreenButton;
     [SerializeField] CanvasGroup StartText;
+    [SerializeField] CanvasGroup Choose1;
+    [SerializeField] CanvasGroup Choose2;
+    [SerializeField] CanvasGroup Choose3;
     private void Start()
     {
         DOTween.Init();
+        AgeManager.onAgeChange.AddListener(CheckAgeChange);
     }
 
     private void OnDisable() //Cierre de tweeners
@@ -25,7 +29,11 @@ public class UIManagerInGame : MonoBehaviour
         StartText.gameObject.SetActive(true);
         ScreenButton.gameObject.SetActive(true);
         Text.gameObject.SetActive(true);
-        Text.DOFade(1, 1).OnComplete(() => {
+        Text.gameObject.SetActive(true);
+
+        Time.timeScale = 0;
+
+        Text.DOFade(1, 1).SetUpdate(true).OnComplete(() => {
             StartText.DOFade(1, 0.7f)
             .SetEase(Ease.InQuart)
             .SetLoops(-1, LoopType.Yoyo)
@@ -37,10 +45,88 @@ public class UIManagerInGame : MonoBehaviour
 
     private void CloseText(CanvasGroup Text)
     {
-        Text.DOFade(0, 1);
+        Text.DOFade(0, 1).OnComplete(() => Time.timeScale = 1).SetUpdate(true);
         StartText.DOKill();
         StartText.gameObject.SetActive(false);
         ScreenButton.gameObject.SetActive(false);
+        Text.gameObject.SetActive(false);
 
     }
+
+    public void OpenChoose1()
+    {
+        CanvasGroup Choose = Choose1;
+        StartText.alpha = 0;
+        StartText.gameObject.SetActive(true);
+        Choose.gameObject.SetActive(true);
+        Choose.gameObject.SetActive(true);
+
+        Time.timeScale = 0;
+
+        Choose.DOFade(1, 1).SetUpdate(true).OnComplete(() => {
+            StartText.DOFade(1, 0.7f)
+            .SetEase(Ease.InQuart)
+            .SetLoops(-1, LoopType.Yoyo)
+            .SetUpdate(true);
+        });
+    }    
+    public void OpenChoose2()
+    {
+        CanvasGroup Choose = Choose2;
+        StartText.alpha = 0;
+        StartText.gameObject.SetActive(true);
+        Choose.gameObject.SetActive(true);
+        Choose.gameObject.SetActive(true);
+
+        Time.timeScale = 0;
+
+        Choose.DOFade(1, 1).SetUpdate(true).OnComplete(() => {
+            StartText.DOFade(1, 0.7f)
+            .SetEase(Ease.InQuart)
+            .SetLoops(-1, LoopType.Yoyo)
+            .SetUpdate(true);
+
+        });
+    }    
+    public void OpenChoose3()
+    {
+        CanvasGroup Choose = Choose3;
+        StartText.alpha = 0;
+        StartText.gameObject.SetActive(true);
+        Choose.gameObject.SetActive(true);
+        Choose.gameObject.SetActive(true);
+
+        Time.timeScale = 0;
+
+        Choose.DOFade(1, 1).SetUpdate(true).OnComplete(() => {
+            StartText.DOFade(1, 0.7f)
+            .SetEase(Ease.InQuart)
+            .SetLoops(-1, LoopType.Yoyo)
+            .SetUpdate(true);
+
+        });
+    }
+
+    private void CheckAgeChange()
+    {
+        switch (AgeManager.age)
+        {
+            case Age.Ancient:
+                OpenChoose1();
+                break;
+            case Age.Medieval:
+                OpenChoose2();
+                break;
+            case Age.Modern:
+                OpenChoose3();
+                break;
+        }
+    }
+
+
+    public void Unpause()
+    {
+        Time.timeScale = 1;
+    }
+
 }
