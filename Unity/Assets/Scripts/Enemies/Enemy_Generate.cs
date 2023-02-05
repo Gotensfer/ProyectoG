@@ -53,25 +53,25 @@ public class Enemy_Generate : MonoBehaviour
                 int enenemyOn_battel = Random.Range(0, enemys_primit.Length);
                 Vector2 spawnPosition = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
 
-                Instantiate(enemys_primit[enenemyOn_battel], spawnPosition, Quaternion.identity);
+                Instantiate(enemys_primit[enenemyOn_battel], spawnPosition, Quaternion.identity, parent);
                 break;
             case Age.Ancient:
                 int enenemyOn_battel2 = Random.Range(0, enemys_antigua.Length);
                 Vector2 spawnPosition2 = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
 
-                Instantiate(enemys_antigua[enenemyOn_battel2], spawnPosition2, Quaternion.identity);
+                Instantiate(enemys_antigua[enenemyOn_battel2], spawnPosition2, Quaternion.identity, parent);
                 break;
             case Age.Medieval:
                 int enenemyOn_battel3 = Random.Range(0, enemys_media.Length);
                 Vector2 spawnPosition3 = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
 
-                Instantiate(enemys_media[enenemyOn_battel3], spawnPosition3, Quaternion.identity);
+                Instantiate(enemys_media[enenemyOn_battel3], spawnPosition3, Quaternion.identity, parent);
                 break;
             case Age.Modern:
                 int enenemyOn_battel4 = Random.Range(0, enemys_moderna.Length);
                 Vector2 spawnPosition4 = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
 
-                Instantiate(enemys_moderna[enenemyOn_battel4], spawnPosition4, Quaternion.identity);
+                Instantiate(enemys_moderna[enenemyOn_battel4], spawnPosition4, Quaternion.identity, parent);
                 break;
         }
     }

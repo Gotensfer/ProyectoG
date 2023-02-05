@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1487115409275719695}
   - component: {fileID: 4863304681745893580}
   m_Layer: 0
-  m_Name: Shields
+  m_Name: Persian_Sheild
   m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cdTime: 3
   damage: 1
-  shieldProyectilePrefab: {fileID: 1458862087355269323, guid: 80986a74a37ba07468ec555ff3cd4b32,
+  shieldProyectilePrefab: {fileID: 1458862087355269323, guid: bf1481d8197d94841b7499cffd511ac9,
     type: 3}
   orbitRadius: 3
   orbitSpeed: 3
