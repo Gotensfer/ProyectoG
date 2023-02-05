@@ -8,7 +8,6 @@ public class UIManagerInGame : MonoBehaviour
 {
     [SerializeField] Button ScreenButton;
     [SerializeField] CanvasGroup StartText;
-    [SerializeField] CanvasGroup SkipText;
     [SerializeField] CanvasGroup Choose1;
     [SerializeField] CanvasGroup Choose2;
     [SerializeField] CanvasGroup Choose3;
@@ -76,14 +75,7 @@ public class UIManagerInGame : MonoBehaviour
         Choose.gameObject.SetActive(true);
 
         Time.timeScale = 0;
-
-        Choose.DOFade(1, 1).SetUpdate(true).OnComplete(() => {
-            StartText.DOFade(1, 0.7f)
-            .SetEase(Ease.InQuart)
-            .SetLoops(-1, LoopType.Yoyo)
-            .SetUpdate(true);
-        });
-    }    
+    }
     public void OpenChoose2()
     {
         CanvasGroup Choose = Choose2;
@@ -92,15 +84,7 @@ public class UIManagerInGame : MonoBehaviour
         Choose.gameObject.SetActive(true);
 
         Time.timeScale = 0;
-
-        Choose.DOFade(1, 1).SetUpdate(true).OnComplete(() => {
-            StartText.DOFade(1, 0.7f)
-            .SetEase(Ease.InQuart)
-            .SetLoops(-1, LoopType.Yoyo)
-            .SetUpdate(true);
-
-        });
-    }    
+    }
     public void OpenChoose3()
     {
         CanvasGroup Choose = Choose3;
@@ -109,14 +93,6 @@ public class UIManagerInGame : MonoBehaviour
         Choose.gameObject.SetActive(true);
 
         Time.timeScale = 0;
-
-        Choose.DOFade(1, 1).SetUpdate(true).OnComplete(() => {
-            StartText.DOFade(1, 0.7f)
-            .SetEase(Ease.InQuart)
-            .SetLoops(-1, LoopType.Yoyo)
-            .SetUpdate(true);
-
-        });
     }
 
     private void CheckAgeChange()
@@ -144,7 +120,7 @@ public class UIManagerInGame : MonoBehaviour
     public void ChangeBannerImage(Sprite Sprite)
     {
         BannerMain.sprite = Sprite;
-    }    
+    }
 
     public void Unpause()
     {
@@ -166,20 +142,20 @@ public class UIManagerInGame : MonoBehaviour
 
         TutoBanner.DOFade(1, 1).SetUpdate(true);
         Tuto1.DOFade(1, 3).SetUpdate(true).OnComplete(() => {
-            SkipText.DOFade(1, 0.7f)
+            StartText.DOFade(1, 0.7f)
             .SetEase(Ease.InQuart)
             .SetLoops(-1, LoopType.Yoyo)
             .SetUpdate(true);
             Tutorial2();
         }).SetDelay(2);
-    }    
+    }
     private void Tutorial2()
     {
         Tuto2.gameObject.SetActive(true);
 
         Tuto1.DOFade(0, 1).SetUpdate(true).OnComplete(() => Tuto1.gameObject.SetActive(false));
 
-        Tuto2.DOFade(1, 3).SetUpdate(true).OnComplete(() =>Tutorial3());
+        Tuto2.DOFade(1, 3).SetUpdate(true).OnComplete(() => Tutorial3());
 
 
     }
@@ -203,6 +179,7 @@ public class UIManagerInGame : MonoBehaviour
         Tuto1.DOKill();
         Tuto2.DOKill();
         Tuto3.DOKill();
+        StartText.DOKill();
 
         TutoBanner.DOFade(0, 1).SetUpdate(true).OnComplete(() => TutoBanner.gameObject.SetActive(false));
         Tuto1.DOFade(0, 1).SetUpdate(true).OnComplete(() => Tuto1.gameObject.SetActive(false));
