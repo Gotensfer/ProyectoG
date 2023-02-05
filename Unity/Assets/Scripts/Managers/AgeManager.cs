@@ -26,11 +26,20 @@ public class AgeManager : MonoBehaviour
     [SerializeField] GameObject primitiveWeapon, ancientMain, ancientSecondary, medievalMain, medievalSecondary, 
         modernMain, modernSecondary;
 
+    [Header("Contenedores de Props para el cambio de textura")]
+    [SerializeField] Transform prop1Container;
+    [SerializeField] Transform prop2Container;
+    [SerializeField] Transform prop3Container;
+    [SerializeField] Transform prop4Container;
+    [SerializeField] Transform prop5Container;
+    [SerializeField] Transform backgroundContainer;
+
     public static UnityEvent onAgeChange = new();
 
     private void Start()
     {
         age = Age.Primitive;
+        onAgeChange.AddListener(ChangeAllAgeMapTextures);
     }
 
     public void ChooseMainPath()
@@ -46,6 +55,26 @@ public class AgeManager : MonoBehaviour
     public void ProvideWeapon()
     {
         SetAgeWeapon();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            age++;
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            path = GamePath.Main;
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            path = GamePath.Secondary;
+        }
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            ChangeAllAgeMapTextures();
+        }
     }
 
     void SetAgeWeapon()
@@ -73,5 +102,25 @@ public class AgeManager : MonoBehaviour
     void AddWeaponToPlayer(GameObject weapon)
     {
         Instantiate(weapon, Vector3.zero, Quaternion.identity, player);
+    }
+
+    void ChangeAllAgeMapTextures()
+    {
+        SetTextureChangeInArray(prop1Container);
+        SetTextureChangeInArray(prop2Container);
+        SetTextureChangeInArray(prop3Container);
+        SetTextureChangeInArray(prop4Container);
+        SetTextureChangeInArray(prop5Container);
+        SetTextureChangeInArray(backgroundContainer);
+    }
+
+    void SetTextureChangeInArray(Transform container)
+    {
+        int totalProps = container.childCount;
+
+        for (int i = 0; i < totalProps; i++)
+        {
+            container.GetChild(i).transform.GetComponent<TextureChanger>().SetEraTextures();
+        }
     }
 }

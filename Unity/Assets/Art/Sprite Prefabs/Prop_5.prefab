@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 9217442086238957167}
   - component: {fileID: 4222797237529161749}
-  - component: {fileID: 2276532255187484933}
   - component: {fileID: 835291581918977889}
   m_Layer: 0
   m_Name: Prop_5
@@ -27,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899682207069220028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -32.28076, y: -43.16342, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -86,22 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2276532255187484933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1899682207069220028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28084fed42c82df45a648455312c61c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transitionStrenght: 1
-  condicion1: 0
-  condicion2: 0
-  condicion3: 0
 --- !u!114 &835291581918977889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,6 +98,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionStrenght: 1
-  condicion1: 0
-  condicion2: 0
-  condicion3: 0
+  primaryTextures:
+  - {fileID: 2800000, guid: 7d09dbf0f2721434aa82d160c20a7875, type: 3}
+  - {fileID: 2800000, guid: 76ce93e046069e147b5ef577b350bb28, type: 3}
+  - {fileID: 2800000, guid: 8571ec4addb9f464188b9a51bbeb27eb, type: 3}
+  secondaryTextures:
+  - {fileID: 2800000, guid: f8c177ea38dc1654c80c605efc5c19c9, type: 3}
+  - {fileID: 2800000, guid: c8b0f88e2ca632c45b7eb3512936a50b, type: 3}
+  - {fileID: 2800000, guid: 20f122cc5cf41dd45b67bf215496955c, type: 3}
