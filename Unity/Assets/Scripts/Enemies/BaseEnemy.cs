@@ -18,6 +18,7 @@ public abstract class BaseEnemy : MonoBehaviour
     [SerializeField] protected float attackReloadTime;
 
     [SerializeField] protected GameObject getHitVfx;
+    [SerializeField] protected DamageSFX damageSfx;
 
     protected Rigidbody2D rb;
 
@@ -56,11 +57,12 @@ public abstract class BaseEnemy : MonoBehaviour
     {
         if (amount < 0)
         {
-            Debug.LogWarning($"Se intentó agregar el valor negativo de {amount} daño.");
+            Debug.LogWarning($"Se intentï¿½ agregar el valor negativo de {amount} daï¿½o.");
             return;
         }
         health -= amount;
-
+        damageSfx.Hit();
+        
         Destroy(Instantiate(getHitVfx, transform.position, Quaternion.identity), 0.6f);
 
         if (health <= 0)

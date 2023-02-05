@@ -27,7 +27,14 @@ public class PlayerVitals : MonoBehaviour
     [SerializeField] GameObject getHitVfx;
     [SerializeField] ParticleSystem deathVfx;
     [SerializeField] ParticleSystem lvlUpVfx;
-
+    
+    //SFX
+    [SerializeField] protected DamageSFX damageSfx;
+    [SerializeField] protected DieSFX dieSfx;
+    [SerializeField] protected GetEXP_SFX expSfx;
+    [SerializeField] protected LevelUpSFX levelSfx;
+    
+    
     public UnityEvent onDeath = new();
     public UnityEvent onLevelup = new();
 
@@ -41,10 +48,10 @@ public class PlayerVitals : MonoBehaviour
     {
         if (amount < 0)
         {
-            Debug.LogWarning($"Se intentó agregar el valor negativo de {amount} daño.");
+            Debug.LogWarning($"Se intentï¿½ agregar el valor negativo de {amount} daï¿½o.");
             return;
         }
-
+        damageSfx.Hit();
         health = Mathf.Clamp(health - amount, 0, maxHealth);
         Destroy(Instantiate(getHitVfx, transform.position, Quaternion.identity), 0.6f);
 
@@ -52,6 +59,7 @@ public class PlayerVitals : MonoBehaviour
         {
             isDead = true;
             deathVfx.Play();
+            dieSfx.Die();
             onDeath.Invoke();
 
             for (int i = 0; i < transform.childCount; i++)
@@ -70,7 +78,7 @@ public class PlayerVitals : MonoBehaviour
     {
         if (amount < 0)
         {
-            Debug.LogWarning($"Se intentó agregar el valor negativo de {amount} curación.");
+            Debug.LogWarning($"Se intentï¿½ agregar el valor negativo de {amount} curaciï¿½n.");
             return;
         }
         health = Mathf.Clamp(health + amount, 0, maxHealth);
@@ -80,15 +88,16 @@ public class PlayerVitals : MonoBehaviour
     {
         if (amount < 0)
         {
-            Debug.LogWarning($"Se intentó agregar el valor negativo de {amount} experiencia.");
+            Debug.LogWarning($"Se intentï¿½ agregar el valor negativo de {amount} experiencia.");
             return;
         }
-        
+        expSfx.Add();
         experience = Mathf.Clamp(experience + amount, 0, neededxpForNextLevel);
 
         if (experience == neededxpForNextLevel)
         {
             LevelUp();
+            
         }
     }
 
@@ -97,9 +106,10 @@ public class PlayerVitals : MonoBehaviour
         level++;
         experience = 0;
         lvlUpVfx.Play();
+        levelSfx.LevelUp();
         onLevelup.Invoke();
 
-        // Operación de módulo ya que cada 10 niveles se cambia de era
+        // Operaciï¿½n de mï¿½dulo ya que cada 10 niveles se cambia de era
         if (level%10 == 0)
         {
             AgeManager.age++; // Sorprendentemente, se puede realizar aritmetica a los enums lmao
