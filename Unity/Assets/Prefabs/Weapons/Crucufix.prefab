@@ -48,4 +48,6 @@ MonoBehaviour:
   damage: 2
   CrucifixProyectilePrefab: {fileID: 8000556917173730718, guid: 758eb4fee3fe46d4bb72eba3eb8d6d58,
     type: 3}
-  lifeTime: 1
+  ChristianSign: {fileID: 8859173304102188575, guid: d6bab70e03048114a82979ad2a43ae0a,
+    type: 3}
+  lifeTime: 5

@@ -74,6 +74,7 @@ public class AgeManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             ChangeAllAgeMapTextures();
+            SetAgeWeapon();
         }
     }
 

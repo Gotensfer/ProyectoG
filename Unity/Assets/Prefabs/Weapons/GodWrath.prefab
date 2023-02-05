@@ -46,5 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cdTime: 1
   damage: 1
-  GodsWrathProyectilePrefab: {fileID: 0}
-  lifeTime: 1
+  GodsWrathProyectilePrefab: {fileID: 5239193275753118027, guid: cf25ef2c3bf595a4c8fd243408dc57e7,
+    type: 3}
+  lifeTime: 2

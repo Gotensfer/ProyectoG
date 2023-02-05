@@ -132,7 +132,6 @@ public class TextureChanger : MonoBehaviour
             time += Time.deltaTime * transitionStrenght;
             float lerpedValue = Mathf.Lerp(startValue, endValue, time);
             textureBG.material.SetFloat(condition, lerpedValue);
-            Debug.Log(lerpedValue);
             yield return null;
         }
     }

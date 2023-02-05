@@ -12,7 +12,7 @@ public class AirstrikeProyectile : BaseProyectile
         if (collision.GetComponent<BaseEnemy>() != null)
         {
             collision.GetComponent<BaseEnemy>().ReceiveDamage(damage);
-            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            gameObject.GetComponent<CircleCollider2D>().enabled = false;
             Destroy(gameObject,3f);
         }
     }

@@ -25,7 +25,7 @@ public class Shields : BaseWeapon
             if (target != null)
             {
                 GameObject newProyectile = Instantiate(shieldProyectilePrefab, transform.position, Quaternion.identity, aim.proyectileHierarchyContainer);
-                newProyectile.GetComponent<OrbitProyectile>().Initialize(orbitSpeed, orbitRadius, transform, shieldLifetime);
+                newProyectile.GetComponent<OrbitProyectile>().Initialize(orbitSpeed, orbitRadius, transform.parent, shieldLifetime);
             }
 
             target = null;

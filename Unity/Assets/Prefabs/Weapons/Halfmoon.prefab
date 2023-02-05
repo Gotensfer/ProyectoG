@@ -48,4 +48,6 @@ MonoBehaviour:
   damage: 1
   HalfmoonProyectilePrefab: {fileID: 8000556917173730718, guid: d729cf4f41c31784ab3a6f32685463a1,
     type: 3}
-  lifeTime: 1
+  IslamSign: {fileID: 8859173304102188575, guid: 00e07311defdd67459d35c0dac6f1819,
+    type: 3}
+  lifeTime: 5
