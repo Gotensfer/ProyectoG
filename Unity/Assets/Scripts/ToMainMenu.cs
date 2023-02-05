@@ -12,6 +12,6 @@ public class ToMainMenu : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }
