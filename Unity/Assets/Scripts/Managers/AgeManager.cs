@@ -33,6 +33,7 @@ public class AgeManager : MonoBehaviour
     [SerializeField] Transform prop4Container;
     [SerializeField] Transform prop5Container;
     [SerializeField] Transform backgroundContainer;
+    [SerializeField] Transform enemyContainer;
 
     public static UnityEvent onAgeChange = new();
 
@@ -40,6 +41,7 @@ public class AgeManager : MonoBehaviour
     {
         age = Age.Primitive;
         onAgeChange.AddListener(ChangeAllAgeMapTextures);
+        onAgeChange.AddListener(CleanMapFromEnemies);
     }
 
     public void ChooseMainPath()
@@ -122,6 +124,16 @@ public class AgeManager : MonoBehaviour
         for (int i = 0; i < totalProps; i++)
         {
             container.GetChild(i).transform.GetComponentInChildren<TextureChanger>().SetEraTextures();
+        }
+    }
+
+    void CleanMapFromEnemies()
+    {
+        int totalProps = enemyContainer.childCount;
+
+        for (int i = 0; i < totalProps; i++)
+        {
+            Destroy(enemyContainer.GetChild(i).transform.gameObject);
         }
     }
 }
