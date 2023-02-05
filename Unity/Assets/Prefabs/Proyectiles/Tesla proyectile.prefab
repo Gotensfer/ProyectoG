@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2380855189728732508}
   - component: {fileID: 3626097840691045686}
   - component: {fileID: 4697992672963003854}
-  - component: {fileID: 5498016566056199813}
+  - component: {fileID: 5108416076901007004}
   m_Layer: 0
-  m_Name: Crucufix proyectile
+  m_Name: Tesla proyectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,7 +125,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5498016566056199813
+--- !u!114 &5108416076901007004
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,8 +134,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8000556917173730718}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96f4f7c967f19c645a0aaf20b65f033d, type: 3}
+  m_Script: {fileID: 11500000, guid: 6f8fbfd922bc4804684c82e8dbc5fcf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 7

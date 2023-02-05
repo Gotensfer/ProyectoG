@@ -22,13 +22,18 @@ public class Crucifix : BaseWeapon
 
             if (target != null)
             {
-                GameObject newProyectile = Instantiate(CrucifixProyectilePrefab, transform.position, Quaternion.identity, aim.proyectileHierarchyContainer);
-                GameObject newProyectile2 = Instantiate(CrucifixProyectilePrefab, transform.position, Quaternion.identity, aim.proyectileHierarchyContainer);
-                GameObject newProyectile3 = Instantiate(CrucifixProyectilePrefab, transform.position, Quaternion.identity, aim.proyectileHierarchyContainer);
-
-                newProyectile.GetComponent<StraightProyectile>().Initialize(aim.GetAimDirection(transform, target), lifeTime);
-                newProyectile2.GetComponent<StraightProyectile>().Initialize(aim.GetAimDirection(transform, target), lifeTime);
-                newProyectile3.GetComponent<StraightProyectile>().Initialize(aim.GetAimDirection(transform, target), lifeTime);
+                //GameObject newProyectile = Instantiate(HalfmoonProyectilePrefab, transform.position, Quaternion.identity, aim.proyectileHierarchyContainer);
+                //GameObject newProyectile2 = Instantiate(HalfmoonProyectilePrefab, transform.position, Quaternion.identity, aim.proyectileHierarchyContainer);
+                //GameObject newProyectile3 = Instantiate(HalfmoonProyectilePrefab, transform.position, Quaternion.identity, aim.proyectileHierarchyContainer);
+                
+                //newProyectile.GetComponent<StraightProyectile>().Initialize(aim.GetAimDirection(transform, target), lifeTime);
+                //newProyectile2.GetComponent<StraightProyectile>().Initialize(aim.GetAimDirection(transform, target), lifeTime);
+                //newProyectile3.GetComponent<StraightProyectile>().Initialize(aim.GetAimDirection(transform, target), lifeTime);
+                for (int i = 0; i < 3; i++)
+                {
+                    GameObject newProyectile = Instantiate(CrucifixProyectilePrefab, transform.position,Quaternion.identity, aim.proyectileHierarchyContainer);
+                    newProyectile.GetComponent<StraightProyectile>().Initialize(aim.GetAimDirection(transform, target), lifeTime);
+                }
             }
 
             target = null;

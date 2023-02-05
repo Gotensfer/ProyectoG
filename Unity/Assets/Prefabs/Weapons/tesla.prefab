@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2544633729579978070
+--- !u!1 &1964526834549410620
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,44 +8,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 430533393670616709}
-  - component: {fileID: 614959220669192029}
+  - component: {fileID: 1462173753752962086}
+  - component: {fileID: 4048361184010851486}
   m_Layer: 0
-  m_Name: Crucufix
+  m_Name: tesla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &430533393670616709
+--- !u!4 &1462173753752962086
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2544633729579978070}
+  m_GameObject: {fileID: 1964526834549410620}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.18743038, y: -2.0786986, z: 1.663619}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &614959220669192029
+--- !u!114 &4048361184010851486
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2544633729579978070}
+  m_GameObject: {fileID: 1964526834549410620}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68fcd55bbd5d29342a92500cb28ec227, type: 3}
+  m_Script: {fileID: 11500000, guid: be752ef6d1f2a7e4191cf68691c9c4ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cdTime: 1
-  damage: 2
-  CrucifixProyectilePrefab: {fileID: 8000556917173730718, guid: 758eb4fee3fe46d4bb72eba3eb8d6d58,
-    type: 3}
+  damage: 4
+  TeslaProyectilePrefab: {fileID: 0}
   lifeTime: 1
