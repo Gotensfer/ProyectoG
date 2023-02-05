@@ -6,21 +6,18 @@ using UnityEngine;
 public class TextureChanger : MonoBehaviour
 {
     // Start is called before the first frame update
-    float secondBGp, thirdBG, fourthBG = 0; //Valor de interpolación entre mapas
+    //float secondBGp, thirdBG, fourthBG = 0; //Valor de interpolación entre mapas
     private SpriteRenderer textureBG;
     [SerializeField] float transitionStrenght = 1f;
-    float time;
-
-    [SerializeField] bool condicion1, condicion2, condicion3;
+    //float time;
 
     void Start()
     {
-        time = 0;
-
         textureBG = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
+    /*
     void Update()
     {
         if (condicion1 == true)
@@ -54,8 +51,27 @@ public class TextureChanger : MonoBehaviour
             }
         }
 
+    }*/
+
+    public void SetEraTextures()
+    {
+        switch (AgeManager.age)
+        {
+            case Age.Primitive:
+                break;
+            case Age.Ancient:
+                StartCoroutine(LerpTextureChange("_Condicional_1"));
+                break;
+            case Age.Medieval:
+                StartCoroutine(LerpTextureChange("_Condicional_2"));
+                break;
+            case Age.Modern:
+                StartCoroutine(LerpTextureChange("_Condicional_3"));
+                break;
+        }
     }
 
+    /*
     void ChangeFisrtEra()
     {
         time += Time.deltaTime * transitionStrenght;
@@ -91,5 +107,22 @@ public class TextureChanger : MonoBehaviour
     public void ChangeCondition3()
     {
         condicion3 = true;
+    }
+    */
+
+    IEnumerator LerpTextureChange(string condition)
+    {
+        int startValue = 0;
+        int endValue = 1;
+        float time = 0f;
+
+        while (time < 1f)
+        {
+            time += Time.deltaTime * transitionStrenght;
+            float lerpedValue = Mathf.Lerp(startValue, endValue, time);
+            textureBG.material.SetFloat(condition, lerpedValue);
+            Debug.Log(lerpedValue);
+            yield return null;
+        }
     }
 }
