@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7501209125949480520}
   - component: {fileID: 7501209125949480521}
   - component: {fileID: 7501209125949480522}
-  - component: {fileID: -4123249007415155556}
+  - component: {fileID: -2804593378539167068}
   m_Layer: 6
-  m_Name: Primitive age - QuickEnemy - Toothsabre
+  m_Name: Modern age - QuickEnemy - Toothsabre
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135,7 +135,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-4123249007415155556
+--- !u!114 &-2804593378539167068
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

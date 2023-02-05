@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7501209125949480520}
   - component: {fileID: 7501209125949480521}
   - component: {fileID: 7501209125949480522}
-  - component: {fileID: -4123249007415155556}
+  - component: {fileID: 6797137390471075115}
   m_Layer: 6
-  m_Name: Primitive age - QuickEnemy - Toothsabre
+  m_Name: Modern age - HeavyEnemy - Toothsabre
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135,7 +135,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-4123249007415155556
+--- !u!114 &6797137390471075115
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,10 +144,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7501209125949480516}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c861737e8924d4d9117c2bd00db80b, type: 3}
+  m_Script: {fileID: 11500000, guid: fd2c83ac38b3e2045be0eed457c040fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
-  baseSpeed: 1
-  baseDamage: 1
-  attackReloadTime: 0.5
+  health: 3
+  baseSpeed: 0.4
+  baseDamage: 2
+  attackReloadTime: 0.1
