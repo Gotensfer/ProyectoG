@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -30,6 +31,11 @@ public class UIManager : MonoBehaviour
     private void OnDisable() //Cierre de tweeners
     {
         DOTween.KillAll(gameObject);
+    }
+
+    public void Begin()
+    {
+        SceneManager.LoadScene(1);
     }
 
     private void Welcome()
