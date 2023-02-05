@@ -12,32 +12,31 @@ public class MusicChanger : MonoBehaviour
     
     //Vitals
     [SerializeField] private PlayerVitals vitals;
-    
-    private int age = (int)AgeManager.age;
-    
+
     // Start is called before the first frame update
     void Start()
     {
         musicInstance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
         musicInstance.start();
         vitals.onDeath.AddListener(StopMusic);
+        AgeManager.onAgeChange.AddListener((ParametterSetter));
     }
 
     public void ParametterSetter()
     {
-        switch ((int)AgeManager.age)
+        switch (AgeManager.age)
         {
-            case 0:
+            case Age.Primitive:
                 break;
-            case 1:
+            case Age.Ancient:
                 parametterSetter = 1;
                 Setter();
                 break;
-            case 2:
+            case Age.Medieval:
                 parametterSetter = 2;
                 Setter();
                 break;
-            case 3:
+            case Age.Modern:
                 parametterSetter = 3;
                 Setter();
                 break;
