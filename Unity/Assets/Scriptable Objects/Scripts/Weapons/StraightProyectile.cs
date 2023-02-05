@@ -6,6 +6,7 @@ public class StraightProyectile : BaseProyectile
 {
     [SerializeField] float speed = 1;
     Vector2 movementDirection;
+    float lifeTime = 1f;
 
     private void FixedUpdate()
     {
@@ -14,9 +15,12 @@ public class StraightProyectile : BaseProyectile
         rb.MovePosition(currentPos + movementVector);
     }
 
-    public void Initialize(Vector2 fireDirection)
+    public void Initialize(Vector2 fireDirection, float lifeTime)
     {
         movementDirection = fireDirection;
+        this.lifeTime = lifeTime;
+
+        Invoke(nameof(SelfDestruct), lifeTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -26,5 +30,10 @@ public class StraightProyectile : BaseProyectile
             collision.GetComponent<BaseEnemy>().ReceiveDamage(damage);
             Destroy(gameObject);
         }
+    }
+
+    void SelfDestruct()
+    {
+        Destroy(gameObject);
     }
 }
