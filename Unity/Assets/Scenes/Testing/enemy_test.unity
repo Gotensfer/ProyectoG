@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -747,10 +747,17 @@ MonoBehaviour:
   - {fileID: 560865122}
   parent: {fileID: 1656864367}
   enemys_primit:
+  - {fileID: 7501209125949480516, guid: 624dea96fb79f71489a34fae4060f5bd, type: 3}
+  enemys_antigua:
+  - {fileID: 7501209125949480516, guid: 92bf5b4124c8bd94aa0070d9bfe335cc, type: 3}
+  - {fileID: 7501209125949480516, guid: 1b34772cf302bfa46a90fda4cd95b5a3, type: 3}
+  enemys_media:
+  - {fileID: 7501209125949480516, guid: 8acb9f8d8c3bebe4c9ec2f7a1e22d72b, type: 3}
   - {fileID: 7501209125949480516, guid: 0ba47d0194f59ee4dbbb9b7d2bab87d5, type: 3}
-  enemys_antigua: []
-  enemys_media: []
-  enemys_moderna: []
+  enemys_moderna:
+  - {fileID: 7501209125949480516, guid: 4cdec9e673968f54d921a6adde71438f, type: 3}
+  - {fileID: 7501209125949480516, guid: 9f4cde5cfa388344ab16e3a04334c4bc, type: 3}
+  - {fileID: 7501209125949480516, guid: 08437f5c6b532fe4da48611383b91653, type: 3}
   enemy_time: 0.5
 --- !u!1 &1375788849
 GameObject:
