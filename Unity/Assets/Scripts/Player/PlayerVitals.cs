@@ -21,9 +21,6 @@ public class PlayerVitals : MonoBehaviour
     [SerializeField] int level;
     public int Level { get => level; }
 
-    [SerializeField] Age age;
-    public Age Era { get => age; }
-
     [SerializeField] GameObject getHitVfx;
     [SerializeField] ParticleSystem deathVfx;
     [SerializeField] ParticleSystem lvlUpVfx;
@@ -121,6 +118,4 @@ public class PlayerVitals : MonoBehaviour
             health = maxHealth;
         }
     }
-
-   
 }
