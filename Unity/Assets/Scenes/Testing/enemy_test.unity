@@ -1054,8 +1054,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 244289531245279868, guid: 4fa471f1a50a2624a98a02086b8fe13c,
         type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 244289531245279868, guid: 4fa471f1a50a2624a98a02086b8fe13c,
+        type: 3}
       propertyPath: m_TagString
-      value: Weapom
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 4247916222717966589, guid: 4fa471f1a50a2624a98a02086b8fe13c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8025008294948733534, guid: 4fa471f1a50a2624a98a02086b8fe13c,
+        type: 3}
+      propertyPath: cdTime
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fa471f1a50a2624a98a02086b8fe13c, type: 3}
