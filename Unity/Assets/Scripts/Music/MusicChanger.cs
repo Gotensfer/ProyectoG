@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using FMOD.Studio;
 using UnityEngine;
 
 public class MusicChanger : MonoBehaviour
@@ -8,7 +9,10 @@ public class MusicChanger : MonoBehaviour
     private FMOD.Studio.EventInstance musicInstance;
     int parametterSetter;
     public string fmodEvent;
-
+    
+    //Vitals
+    [SerializeField] private PlayerVitals vitals;
+    
     private int age = (int)AgeManager.age;
     
     // Start is called before the first frame update
@@ -16,6 +20,7 @@ public class MusicChanger : MonoBehaviour
     {
         musicInstance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
         musicInstance.start();
+        vitals.onDeath.AddListener(StopMusic);
     }
 
     public void ParametterSetter()
@@ -43,5 +48,9 @@ public class MusicChanger : MonoBehaviour
     {
         musicInstance.setParameterByName("Age", parametterSetter);
     }
-    
+
+    void StopMusic()
+    {
+        musicInstance.stop(STOP_MODE.ALLOWFADEOUT);
+    }
 }

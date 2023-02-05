@@ -3477,6 +3477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fmodEvent: event:/Music/Music
+  vitals: {fileID: 2085404524}
 --- !u!1001 &1091197902
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7119,6 +7120,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 137434201382270299}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2085404524 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 137434202922388011, guid: 4fa471f1a50a2624a98a02086b8fe13c,
+    type: 3}
+  m_PrefabInstance: {fileID: 137434201382270299}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21a6f549f18217e4682559547ca1b43a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2096971581
 PrefabInstance:
   m_ObjectHideFlags: 0
