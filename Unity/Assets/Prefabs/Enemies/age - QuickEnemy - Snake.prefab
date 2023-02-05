@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  baseSpeed: 1
-  baseDamage: 1
+  baseSpeed: 3
+  baseDamage: 3
   attackReloadTime: 0.5
   getHitVfx: {fileID: 1578745271286384192, guid: d0d7ae81a935a444e869bed93f395924,
     type: 3}
