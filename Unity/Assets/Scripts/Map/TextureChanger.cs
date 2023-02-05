@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 [RequireComponent(typeof(SpriteRenderer))]
 public class TextureChanger : MonoBehaviour
@@ -10,11 +11,15 @@ public class TextureChanger : MonoBehaviour
     private SpriteRenderer textureBG;
     [SerializeField] float transitionStrenght = 1f;
     //float time;
+    [SerializeField] Texture[] primaryTextures;
+    [SerializeField] Texture[] secondaryTextures;
 
     void Start()
     {
         textureBG = GetComponent<SpriteRenderer>();
     }
+
+
 
     // Update is called once per frame
     /*
@@ -60,12 +65,18 @@ public class TextureChanger : MonoBehaviour
             case Age.Primitive:
                 break;
             case Age.Ancient:
+                if (AgeManager.path == GamePath.Main) textureBG.material.SetTexture("_Map2", primaryTextures[0]);
+                else textureBG.material.SetTexture("_Map2", secondaryTextures[0]);
                 StartCoroutine(LerpTextureChange("_Condicional_1"));
                 break;
             case Age.Medieval:
+                if (AgeManager.path == GamePath.Main) textureBG.material.SetTexture("_Map3", primaryTextures[1]);
+                else textureBG.material.SetTexture("_Map3", secondaryTextures[1]);
                 StartCoroutine(LerpTextureChange("_Condicional_2"));
                 break;
             case Age.Modern:
+                if (AgeManager.path == GamePath.Main) textureBG.material.SetTexture("_Map4", primaryTextures[2]);
+                else textureBG.material.SetTexture("_Map4", secondaryTextures[2]);
                 StartCoroutine(LerpTextureChange("_Condicional_3"));
                 break;
         }

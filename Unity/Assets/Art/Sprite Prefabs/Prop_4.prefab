@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4859302604633058480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.468076, y: -37.40895, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -98,6 +98,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionStrenght: 1
-  condicion1: 0
-  condicion2: 0
-  condicion3: 0
+  primaryTextures:
+  - {fileID: 2800000, guid: 51b620bfacf7cb74b8c314ecc69960de, type: 3}
+  - {fileID: 2800000, guid: 4acb6b8134ffb8b4ab51cc4c85cde615, type: 3}
+  - {fileID: 2800000, guid: 94e56e05af828784b9e0a81c7db5f120, type: 3}
+  secondaryTextures:
+  - {fileID: 2800000, guid: 3490cd7ee6e1aab41b4e879126960e58, type: 3}
+  - {fileID: 2800000, guid: 73e36753162361343869784777d68aa0, type: 3}
+  - {fileID: 2800000, guid: e3af04ee20187f742afbd6306638013c, type: 3}
