@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 7501209125949480521}
   - component: {fileID: 7501209125949480522}
   - component: {fileID: 6797137390471075115}
+  - component: {fileID: 8505307347379902065}
   m_Layer: 6
   m_Name: Modern age - HeavyEnemy - Toothsabre
   m_TagString: Enemy
@@ -184,3 +185,17 @@ MonoBehaviour:
   attackReloadTime: 0.1
   getHitVfx: {fileID: 1578745271286384192, guid: d0d7ae81a935a444e869bed93f395924,
     type: 3}
+  damageSfx: {fileID: 8505307347379902065}
+--- !u!114 &8505307347379902065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7501209125949480516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dc27f442368a8844bf25d728e71f182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fmodEvent: event:/SFX/Hit (Enemy-Own)
