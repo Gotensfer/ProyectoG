@@ -23,6 +23,10 @@ public class PlayerVitals : MonoBehaviour
     [SerializeField] Age age;
     public Age Era { get => age; }
 
+    [SerializeField] GameObject weapon;
+    
+
+    public bool isDead = false;
     private void Start()
     {
         health = maxHealth;
@@ -36,6 +40,19 @@ public class PlayerVitals : MonoBehaviour
             return;
         }
         health = Mathf.Clamp(health - amount, 0, maxHealth);
+        if (health == 0)
+        {
+            isDead = true;
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                Transform child = transform.GetChild(i);
+                if (child.CompareTag("Weapon"))
+                {
+                    Destroy(child.gameObject);
+                }
+               
+            }
+        }
     }
 
     public void ReceiveHeal(int amount)
@@ -77,4 +94,6 @@ public class PlayerVitals : MonoBehaviour
             health = maxHealth;
         }
     }
+
+   
 }
