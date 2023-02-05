@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class PlayerVitals : MonoBehaviour
 {
@@ -72,6 +73,8 @@ public class PlayerVitals : MonoBehaviour
                 }
                
             }
+
+            Invoke(nameof(BackToMainMenu), 3);
         }
     }
 
@@ -117,5 +120,10 @@ public class PlayerVitals : MonoBehaviour
             AgeManager.onAgeChange.Invoke();
             health = maxHealth;
         }
+    }
+
+    void BackToMainMenu()
+    {
+        SceneManager.LoadScene(1);
     }
 }
