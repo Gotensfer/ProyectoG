@@ -43,10 +43,10 @@ MonoBehaviour:
   Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638112013631578425
+  lastModified: 638112043176517679
   FileSizes:
   - Name: Desktop
-    Value: 1327200
+    Value: 1344576
   Exists: 1
 --- !u!114 &-5815146728456586403
 MonoBehaviour:
@@ -129,6 +129,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1056
+--- !u!114 &-2239950015037696719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/SplashScreen
+  m_EditorClassIdentifier: 
+  Path: event:/Music/SplashScreen
+  Guid:
+    Data1: -2033824204
+    Data2: 1150502300
+    Data3: -985043549
+    Data4: 1216598184
+  Banks:
+  - {fileID: -7810663519732344732}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2616
 --- !u!114 &-334064514501972383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,10 +198,10 @@ MonoBehaviour:
   Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638112013629354788
+  lastModified: 638112043176147418
   FileSizes:
   - Name: Desktop
-    Value: 1520
+    Value: 1574
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -206,12 +233,13 @@ MonoBehaviour:
   - {fileID: -3171961388971018680}
   - {fileID: 9039849639575584013}
   - {fileID: 4131518881747574246}
+  - {fileID: -2239950015037696719}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4162615153985300034}
   StringsBanks:
   - {fileID: -281814907311300695}
-  cacheTime: 638112013633185331
+  cacheTime: 638112043176787769
   cacheVersion: 131601
 --- !u!114 &581786773509876310
 MonoBehaviour:
@@ -306,7 +334,7 @@ MonoBehaviour:
   Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638112013633185331
+  lastModified: 638112043176787769
   FileSizes:
   - Name: Desktop
     Value: 122400
@@ -380,7 +408,7 @@ MonoBehaviour:
   Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638112013629344789
+  lastModified: 638112043176137420
   FileSizes:
   - Name: Desktop
     Value: 1888
