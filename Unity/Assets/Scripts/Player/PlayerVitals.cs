@@ -34,8 +34,10 @@ public class PlayerVitals : MonoBehaviour
     
     //Music 
     [SerializeField] protected MusicChanger music;
-    
-    
+
+    [SerializeField] GameObject endgamestuff;
+
+
     public UnityEvent onDeath = new();
     public UnityEvent onLevelup = new();
 
@@ -120,8 +122,33 @@ public class PlayerVitals : MonoBehaviour
             AgeManager.onAgeChange.Invoke();
             print(AgeManager.age);
             health = maxHealth;
+
+            if (level == 50)
+            {
+                endgamestuff.SetActive(true);
+
+                isDead = true;
+                deathVfx.Play();
+                dieSfx.Die();
+                onDeath.Invoke();
+                gameObject.GetComponent<BoxCollider2D>().enabled = false;
+
+                for (int i = 0; i < transform.childCount; i++)
+                {
+                    Transform child = transform.GetChild(i);
+                    if (child.CompareTag("Weapon"))
+                    {
+                        Destroy(child.gameObject);
+                    }
+
+                }
+
+                Invoke(nameof(BackToMainMenu), 3);
+            }
         }
     }
+
+    
 
     void BackToMainMenu()
     {

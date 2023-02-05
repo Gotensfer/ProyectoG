@@ -2642,7 +2642,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1983267108}
   - component: {fileID: 1983267110}
-  - component: {fileID: 1983267111}
   - component: {fileID: 1983267109}
   m_Layer: 5
   m_Name: Text
@@ -2693,12 +2692,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: "ANCESTOR'S LEGACY\r\n2023\r\n\r\n\r\n\r\n\n\r\n\r\nGame Producer:\n\nIsabela
     Hern\xE1ndez Zapata (Isa_H)\n\nDevelopment:\nJuan Fernando L\xF3pez Rodr\xEDguez
-    \u2013 Lead (Gotensfer)\nJuli\xE1n David Arroyave P\xE9rez (JayDeeAy)\nJuan Jos\xE9
+    \u2013 Lead (Gotensfer)\nJuli\xE1n David Arroyave P\xE9rez (JayDeeAy)\nJuan Andr\xE9s
     Ferrer Due\xF1as (andresferrer)\n\nSound Designer:\nJose Daniel Montoya Molina
     (Panchuel)\n\nArtists:\nCamilo Correa Rojas (Calcium)\nJuan Mateo Cuellar (Jatewz)\nPaulina
     Urhan (MossyGarden)\n\n\nUI/UX:\nJuli\xE1n David Arroyave P\xE9rez (JayDeeAy)\nIsabela
     Hern\xE1ndez Zapata (Isa_H)\n\n\nGame Designers:\nJuli\xE1n David Arroyave P\xE9rez
-    (JayDeeAy)\nIsabela Hern\xE1ndez Zapata (Isa_H)\nJuan Jos\xE9 Ferrer Due\xF1as
+    (JayDeeAy)\nIsabela Hern\xE1ndez Zapata (Isa_H)\nJuan Andr\xE9s Ferrer Due\xF1as
     (andresferrer)\nNicol\xE1s Villa Vargas (The Ash Lord)\n\n\nScript:\nNicol\xE1s
     Villa Vargas (The Ash Lord)\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
   m_isRightToLeft: 0
@@ -2778,38 +2777,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983267107}
   m_CullTransparentMesh: 1
---- !u!114 &1983267111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983267107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a31067033627c6644b51b694a8bd23c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textSpanish: "ANCESTOR'S LEGACY 2023       Productora: Isabela Hern\xE1ndez Zapata
-    (Isa_H)  Desarrollo: Juan Fernando L\xF3pez Rodr\xEDguez \u2013 Lead (Gotensfer)
-    Juli\xE1n David Arroyave P\xE9rez (JayDeeAy) Juan Jos\xE9 Ferrer Due\xF1as (andresferrer) 
-    Dise\xF1ador de Sonido: Jose Daniel Montoya Molina (Panchuel)  Artistas: Camilo
-    Correa Rojas (Calcium) Juan Mateo Cuellar (Jatewz) Paulina Urhan (MossyGarden)  
-    UI/UX: Juli\xE1n David Arroyave P\xE9rez (JayDeeAy) Isabela Hern\xE1ndez Zapata
-    (Isa_H)   Dise\xF1adores de juego: Juli\xE1n David Arroyave P\xE9rez (JayDeeAy)
-    Isabela Hern\xE1ndez Zapata (Isa_H) Juan Jos\xE9 Ferrer Due\xF1as (andresferrer)
-    Nicol\xE1s Villa Vargas (The Ash Lord)   Script Nicol\xE1s Villa Vargas (The
-    Ash Lord)               AVOKADO CRUNCH"
-  textEnglish: "ANCESTOR'S LEGACY 2023       Game Producer: Isabela Hern\xE1ndez
-    Zapata (Isa_H)  Development: Juan Fernando L\xF3pez Rodr\xEDguez \u2013 Lead
-    (Gotensfer) Juli\xE1n David Arroyave P\xE9rez (JayDeeAy) Juan Jos\xE9 Ferrer
-    Due\xF1as (andresferrer)  Sound Designer: Jose Daniel Montoya Molina (Panchuel) 
-    Artist: Camilo Correa Rojas (Calcium) Juan Mateo Cuellar (Jatewz) Paulina Urhan
-    (MossyGarden)   UI/UX: Juli\xE1n David Arroyave P\xE9rez (JayDeeAy) Isabela Hern\xE1ndez
-    Zapata (Isa_H)   Game Designers: Juli\xE1n David Arroyave P\xE9rez (JayDeeAy)
-    Isabela Hern\xE1ndez Zapata (Isa_H) Juan Jos\xE9 Ferrer Due\xF1as (andresferrer)
-    Nicol\xE1s Villa Vargas (The Ash Lord)   Script Nicol\xE1s Villa Vargas (The
-    Ash Lord)               AVOKADO CRUNCH"
 --- !u!1 &2005858106
 GameObject:
   m_ObjectHideFlags: 0
