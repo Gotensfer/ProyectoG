@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1487115409275719695}
   - component: {fileID: 4863304681745893580}
   m_Layer: 0
-  m_Name: Shields
+  m_Name: Persian_Sheild
   m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
