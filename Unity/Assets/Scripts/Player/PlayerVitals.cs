@@ -23,7 +23,9 @@ public class PlayerVitals : MonoBehaviour
     [SerializeField] Age age;
     public Age Era { get => age; }
 
-    [SerializeField] GameObject weapon;
+    [SerializeField] GameObject getHitVfx;
+    [SerializeField] ParticleSystem deathVfx;
+    [SerializeField] ParticleSystem lvlUpVfx;
     
 
     public bool isDead = false;
@@ -39,10 +41,15 @@ public class PlayerVitals : MonoBehaviour
             Debug.LogWarning($"Se intentó agregar el valor negativo de {amount} daño.");
             return;
         }
+
         health = Mathf.Clamp(health - amount, 0, maxHealth);
+        Destroy(Instantiate(getHitVfx, transform.position, Quaternion.identity), 0.6f);
+
         if (health == 0)
         {
             isDead = true;
+            deathVfx.Play();
+
             for (int i = 0; i < transform.childCount; i++)
             {
                 Transform child = transform.GetChild(i);
@@ -85,6 +92,7 @@ public class PlayerVitals : MonoBehaviour
     {
         level++;
         experience = 0;
+        lvlUpVfx.Play();
 
         // Operación de módulo ya que cada 10 niveles se cambia de era
         if (level%10 == 0)

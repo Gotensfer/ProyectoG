@@ -15053,9 +15053,12 @@ MonoBehaviour:
   neededxpForNextLevel: 10
   health: 0
   maxHealth: 5
-  level: 0
+  level: 1
   age: 0
-  weapon: {fileID: 0}
+  getHitVfx: {fileID: 1578745271286384192, guid: d0d7ae81a935a444e869bed93f395924,
+    type: 3}
+  deathVfx: {fileID: 2025982000}
+  lvlUpVfx: {fileID: 137434202216557064}
   isDead: 0
 --- !u!114 &137434202922388009
 MonoBehaviour:

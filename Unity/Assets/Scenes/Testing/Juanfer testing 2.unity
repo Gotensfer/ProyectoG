@@ -5861,6 +5861,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 709062894}
     m_Modifications:
+    - target: {fileID: 137434201138225297, guid: 4fa471f1a50a2624a98a02086b8fe13c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 137434201138225297, guid: 4fa471f1a50a2624a98a02086b8fe13c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 137434201138225297, guid: 4fa471f1a50a2624a98a02086b8fe13c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 137434201138225297, guid: 4fa471f1a50a2624a98a02086b8fe13c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 137434201138225297, guid: 4fa471f1a50a2624a98a02086b8fe13c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 137434201138225297, guid: 4fa471f1a50a2624a98a02086b8fe13c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 137434202922388009, guid: 4fa471f1a50a2624a98a02086b8fe13c,
         type: 3}
       propertyPath: proyectileHierarchyContainer

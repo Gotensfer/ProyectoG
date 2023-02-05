@@ -17,6 +17,7 @@ public abstract class BaseEnemy : MonoBehaviour
 
     [SerializeField] protected float attackReloadTime;
 
+    [SerializeField] protected GameObject getHitVfx;
 
     protected Rigidbody2D rb;
 
@@ -59,6 +60,8 @@ public abstract class BaseEnemy : MonoBehaviour
             return;
         }
         health -= amount;
+
+        Destroy(Instantiate(getHitVfx, transform.position, Quaternion.identity), 0.6f);
 
         if (health <= 0)
         {
