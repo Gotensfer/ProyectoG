@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseWeapon : MonoBehaviour
+public abstract class BaseWeapon : MonoBehaviour
 {
     [SerializeField] protected float cdTime = 1;
     public float CdTime { get => cdTime; set { cdTime = value;} }
