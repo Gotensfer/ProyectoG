@@ -8,6 +8,7 @@ public class UIManagerInGame : MonoBehaviour
 {
     [SerializeField] Button ScreenButton;
     [SerializeField] CanvasGroup StartText;
+    [SerializeField] CanvasGroup SkipText;
     [SerializeField] CanvasGroup Choose1;
     [SerializeField] CanvasGroup Choose2;
     [SerializeField] CanvasGroup Choose3;
@@ -17,10 +18,18 @@ public class UIManagerInGame : MonoBehaviour
     [SerializeField] Sprite Banner2;
     [SerializeField] Sprite Banner3;
     [SerializeField] Sprite Banner4;
+
+    [SerializeField] CanvasGroup Tuto1;
+    [SerializeField] CanvasGroup Tuto2;
+    [SerializeField] CanvasGroup Tuto3;
+    [SerializeField] CanvasGroup TutoBanner;
+
     private void Start()
     {
         DOTween.Init();
         AgeManager.onAgeChange.AddListener(CheckAgeChange);
+
+        Tutorial();
     }
 
     private void OnDisable() //Cierre de tweeners
@@ -65,7 +74,6 @@ public class UIManagerInGame : MonoBehaviour
         StartText.alpha = 0;
         StartText.gameObject.SetActive(true);
         Choose.gameObject.SetActive(true);
-        Choose.gameObject.SetActive(true);
 
         Time.timeScale = 0;
 
@@ -81,7 +89,6 @@ public class UIManagerInGame : MonoBehaviour
         CanvasGroup Choose = Choose2;
         StartText.alpha = 0;
         StartText.gameObject.SetActive(true);
-        Choose.gameObject.SetActive(true);
         Choose.gameObject.SetActive(true);
 
         Time.timeScale = 0;
@@ -99,7 +106,6 @@ public class UIManagerInGame : MonoBehaviour
         CanvasGroup Choose = Choose3;
         StartText.alpha = 0;
         StartText.gameObject.SetActive(true);
-        Choose.gameObject.SetActive(true);
         Choose.gameObject.SetActive(true);
 
         Time.timeScale = 0;
@@ -145,4 +151,71 @@ public class UIManagerInGame : MonoBehaviour
         Time.timeScale = 1;
     }
 
+
+    #region "Tutorial"
+    private void Tutorial()
+    {
+        StartText.alpha = 0;
+        StartText.gameObject.SetActive(true);
+        ScreenButton.gameObject.SetActive(true);
+        TutoBanner.gameObject.SetActive(true);
+        Tuto1.gameObject.SetActive(true);
+
+        Time.timeScale = 0;
+        ScreenButton.onClick.AddListener(CloseTutorial);
+
+        TutoBanner.DOFade(1, 1).SetUpdate(true);
+        Tuto1.DOFade(1, 3).SetUpdate(true).OnComplete(() => {
+            SkipText.DOFade(1, 0.7f)
+            .SetEase(Ease.InQuart)
+            .SetLoops(-1, LoopType.Yoyo)
+            .SetUpdate(true);
+            Tutorial2();
+        });
+    }    
+    private void Tutorial2()
+    {
+        Tuto2.gameObject.SetActive(true);
+
+        Tuto1.DOFade(0, 1).SetUpdate(true).OnComplete(() => Tuto1.gameObject.SetActive(false));
+
+        Tuto2.DOFade(1, 3).SetUpdate(true).OnComplete(() =>Tutorial3());
+
+
+    }
+    private void Tutorial3()
+    {
+        Tuto3.gameObject.SetActive(true);
+
+        Tuto2.DOFade(0, 1).SetUpdate(true).OnComplete(() => Tuto1.gameObject.SetActive(false));
+
+        Tuto3.DOFade(1, 3).SetUpdate(true).OnComplete(() => {
+
+            Tuto3.DOFade(0, 1).SetUpdate(true);
+            TutoBanner.DOFade(0, 1).SetUpdate(true);
+            Time.timeScale = 1;
+        });
+    }
+
+    public void CloseTutorial()
+    {
+        TutoBanner.DOKill();
+        Tuto1.DOKill();
+        Tuto2.DOKill();
+        Tuto3.DOKill();
+
+        TutoBanner.DOFade(0, 1).SetUpdate(true).OnComplete(() => TutoBanner.gameObject.SetActive(false));
+        Tuto1.DOFade(0, 1).SetUpdate(true).OnComplete(() => Tuto1.gameObject.SetActive(false));
+        Tuto2.DOFade(0, 1).SetUpdate(true).OnComplete(() => Tuto2.gameObject.SetActive(false));
+        Tuto3.DOFade(0, 1).SetUpdate(true).OnComplete(() => Tuto3.gameObject.SetActive(false));
+
+        StartText.gameObject.SetActive(false);
+        ScreenButton.gameObject.SetActive(false);
+
+
+
+        Time.timeScale = 1;
+    }
+
+    #endregion
 }
