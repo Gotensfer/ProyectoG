@@ -179,9 +179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd2c83ac38b3e2045be0eed457c040fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
-  baseSpeed: 0.5
-  baseDamage: 2
+  health: 6
+  baseSpeed: 1
+  baseDamage: 3
   attackReloadTime: 0.1
   getHitVfx: {fileID: 1578745271286384192, guid: d0d7ae81a935a444e869bed93f395924,
     type: 3}
