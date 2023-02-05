@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b74a3655-e569-4be0-9757-498a0fd5b098}">
+		<property name="assetPath">
+			<value>SFX/SFX_Orbit_Around.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.91200000000000003</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dc4cd239-1007-45d9-a6b8-b021cc363af2}</destination>
+		</relationship>
+	</object>
+</objects>
