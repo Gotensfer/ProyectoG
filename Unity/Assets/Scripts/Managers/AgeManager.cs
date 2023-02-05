@@ -102,7 +102,10 @@ public class AgeManager : MonoBehaviour
 
         for (int i = 0; i < totalProps; i++)
         {
-            container.GetChild(i).transform.GetComponentInChildren<TextureChanger>().SetEraTextures();
+            if (container.GetChild(i).transform.GetComponentInChildren<TextureChanger>() != null)
+            {
+                container.GetChild(i).transform.GetComponentInChildren<TextureChanger>().SetEraTextures();
+            }            
         }
     }
 

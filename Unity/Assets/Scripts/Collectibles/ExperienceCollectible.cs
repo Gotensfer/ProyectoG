@@ -26,6 +26,7 @@ public class ExperienceCollectible : MonoBehaviour
 
     void SetSpriteByEra()
     {
+        print((int)AgeManager.age);
         GetComponent<SpriteRenderer>().sprite = xpSprite[(int)AgeManager.age];
     }
 }
