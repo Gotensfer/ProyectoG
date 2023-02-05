@@ -14,6 +14,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] RectTransform CreditsInfo;
     [SerializeField] CanvasGroup CreditsPanel;
 
+    [SerializeField] RectTransform Logo;
+
 
     void Start()
     {
@@ -35,13 +37,15 @@ public class UIManager : MonoBehaviour
         StartText.alpha = 0;
         StartText.gameObject.SetActive(true);
         ScreenButton.gameObject.SetActive(true);
-
-        StartText.DOFade(1, 0.6f)
+        Logo.gameObject.SetActive(true);
+        
+        Logo.DOAnchorPosY(-1650, 6).OnComplete(() => {
+            StartText.DOFade(1, 0.6f)
             .SetEase(Ease.InQuart)
             .SetLoops(-1, LoopType.Yoyo)
             .SetUpdate(true);
-
-        ScreenButton.onClick.AddListener(CloseWelcome);
+            ScreenButton.onClick.AddListener(CloseWelcome);
+        });        
     }
 
     private void CloseWelcome()
@@ -49,8 +53,7 @@ public class UIManager : MonoBehaviour
         StartText.gameObject.SetActive(false);
         Buttons.gameObject.SetActive(true);
         StartText.DOKill();
-
-        Buttons.DOAnchorPos(new Vector2(0, 0), 1);
+        Buttons.DOAnchorPos(new Vector2(0, -300), 1);
 
         ScreenButton.onClick.RemoveListener(CloseWelcome);
         ScreenButton.gameObject.SetActive(false);
@@ -80,7 +83,7 @@ public class UIManager : MonoBehaviour
         CreditsPanel.gameObject.SetActive(true);
         CreditsPanel.DOFade(1, 1).OnComplete(() => {
             ScreenButton.onClick.AddListener(CloseCredits);
-            CreditsInfo.DOAnchorPosY(1511, 35).OnComplete(EndCredits);
+            CreditsInfo.DOAnchorPosY(3700, 15).OnComplete(EndCredits);
         });
     }
 
