@@ -305,12 +305,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 283556322}
+  - {fileID: 104091768}
   - {fileID: 85250111}
   - {fileID: 47966605}
   - {fileID: 1636454674}
   - {fileID: 37996529}
   - {fileID: 1703951039}
-  - {fileID: 104091768}
   - {fileID: 959893389}
   - {fileID: 464154352}
   m_Father: {fileID: 817437832}
@@ -416,7 +416,7 @@ RectTransform:
   - {fileID: 2051350348}
   - {fileID: 2071614774}
   m_Father: {fileID: 30201446}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -458,7 +458,7 @@ RectTransform:
   - {fileID: 1504686152}
   - {fileID: 1506787797}
   m_Father: {fileID: 30201446}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -512,7 +512,7 @@ RectTransform:
   - {fileID: 1804487019}
   - {fileID: 1110823452}
   m_Father: {fileID: 30201446}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -564,7 +564,7 @@ RectTransform:
   m_Children:
   - {fileID: 243864067}
   m_Father: {fileID: 30201446}
-  m_RootOrder: 6
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1598,8 +1598,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c326f40a93dca46a4434a3be038628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textSpanish: {fileID: 0}
-  textEnglish: {fileID: 0}
+  textSpanish: {fileID: 21300000, guid: e22fbf6cdceb74d4e987d5c605d56223, type: 3}
+  textEnglish: {fileID: 21300000, guid: 599fe48d680a3fd44a2ac7a7d33d74d5, type: 3}
 --- !u!1001 &255961033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2766,8 +2766,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c326f40a93dca46a4434a3be038628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textSpanish: {fileID: 0}
-  textEnglish: {fileID: 0}
+  textSpanish: {fileID: 21300000, guid: e22fbf6cdceb74d4e987d5c605d56223, type: 3}
+  textEnglish: {fileID: 21300000, guid: 599fe48d680a3fd44a2ac7a7d33d74d5, type: 3}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -4900,8 +4900,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c326f40a93dca46a4434a3be038628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textSpanish: {fileID: 0}
-  textEnglish: {fileID: 0}
+  textSpanish: {fileID: 21300000, guid: 6fd55d63ce0351448a6e87082f8f5194, type: 3}
+  textEnglish: {fileID: 21300000, guid: 21839e7e3b539ec44b130e530112a2a0, type: 3}
 --- !u!1001 &868266761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6201,8 +6201,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c326f40a93dca46a4434a3be038628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textSpanish: {fileID: 0}
-  textEnglish: {fileID: 0}
+  textSpanish: {fileID: 21300000, guid: 274e28ed34e3a9f4cbf2a03c2c07d989, type: 3}
+  textEnglish: {fileID: 21300000, guid: 1d4fa6391f94a8f4ba5173bc6744be56, type: 3}
 --- !u!1001 &1117272913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8705,8 +8705,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c326f40a93dca46a4434a3be038628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textSpanish: {fileID: 0}
-  textEnglish: {fileID: 0}
+  textSpanish: {fileID: 21300000, guid: c8bcb08104c06ba49a63c2ef1b3c8e5e, type: 3}
+  textEnglish: {fileID: 21300000, guid: b4ca7fb5233a629479538bb8c596a938, type: 3}
 --- !u!1001 &1486808138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9436,7 +9436,7 @@ RectTransform:
   - {fileID: 1280013102}
   - {fileID: 497199229}
   m_Father: {fileID: 30201446}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9650,8 +9650,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c326f40a93dca46a4434a3be038628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textSpanish: {fileID: 0}
-  textEnglish: {fileID: 0}
+  textSpanish: {fileID: 21300000, guid: e22fbf6cdceb74d4e987d5c605d56223, type: 3}
+  textEnglish: {fileID: 21300000, guid: 599fe48d680a3fd44a2ac7a7d33d74d5, type: 3}
 --- !u!1001 &1692368615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9918,8 +9918,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1703951039}
   - component: {fileID: 1703951038}
-  - component: {fileID: 1703951037}
   - component: {fileID: 1703951040}
+  - component: {fileID: 1703951037}
   - component: {fileID: 1703951036}
   m_Layer: 5
   m_Name: StartText
@@ -10051,7 +10051,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 30201446}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10308,7 +10308,6 @@ GameObject:
   - component: {fileID: 1756403115}
   - component: {fileID: 1756403114}
   - component: {fileID: 1756403113}
-  - component: {fileID: 1756403116}
   m_Layer: 5
   m_Name: Tutobanner
   m_TagString: Untagged
@@ -10386,20 +10385,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756403111}
   m_CullTransparentMesh: 1
---- !u!114 &1756403116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1756403111}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65c326f40a93dca46a4434a3be038628, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textSpanish: {fileID: 0}
-  textEnglish: {fileID: 0}
 --- !u!1001 &1784402857
 PrefabInstance:
   m_ObjectHideFlags: 0

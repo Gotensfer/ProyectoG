@@ -167,8 +167,9 @@ public class UIManagerInGame : MonoBehaviour
 
         Tuto3.DOFade(1, 3).SetUpdate(true).OnComplete(() => {
 
-            Tuto3.DOFade(0, 1).SetUpdate(true);
-            TutoBanner.DOFade(0, 1).SetUpdate(true);
+            Tuto3.DOFade(0, 1).SetUpdate(true).OnComplete(() => Tuto3.gameObject.SetActive(false));
+            TutoBanner.DOFade(0, 1).SetUpdate(true).OnComplete(() => TutoBanner.gameObject.SetActive(false));
+            StartText.gameObject.SetActive(false);
             Time.timeScale = 1;
         });
     }
