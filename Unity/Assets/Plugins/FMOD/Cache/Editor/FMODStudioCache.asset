@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638110587276894951
+  lastModified: 638110618060096322
   FileSizes:
   - Name: Desktop
     Value: 802
@@ -70,7 +70,7 @@ MonoBehaviour:
   - {fileID: 4162615153985300034}
   StringsBanks:
   - {fileID: -281814907311300695}
-  cacheTime: 638110587276904919
+  cacheTime: 638110618060126299
   cacheVersion: 131601
 --- !u!114 &1435005143732102039
 MonoBehaviour:
@@ -87,7 +87,7 @@ MonoBehaviour:
   Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/try.bank
   Name: try
   StudioPath: bank:/try
-  lastModified: 638110587276904919
+  lastModified: 638110618060126299
   FileSizes:
   - Name: Desktop
     Value: 1436
@@ -107,7 +107,7 @@ MonoBehaviour:
   Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638110587276884943
+  lastModified: 638110618060086318
   FileSizes:
   - Name: Desktop
     Value: 1036

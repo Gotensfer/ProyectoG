@@ -148,6 +148,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  baseSpeed: 0.4
+  baseSpeed: 0.5
   baseDamage: 2
   attackReloadTime: 0.1
