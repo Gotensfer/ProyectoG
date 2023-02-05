@@ -171,7 +171,7 @@ public class UIManagerInGame : MonoBehaviour
             .SetLoops(-1, LoopType.Yoyo)
             .SetUpdate(true);
             Tutorial2();
-        });
+        }).SetDelay(2);
     }    
     private void Tutorial2()
     {
