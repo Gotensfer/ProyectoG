@@ -118,6 +118,7 @@ public class PlayerVitals : MonoBehaviour
         {
             AgeManager.age++; // Sorprendentemente, se puede realizar aritmetica a los enums lmao
             AgeManager.onAgeChange.Invoke();
+            print(AgeManager.age);
             health = maxHealth;
         }
     }

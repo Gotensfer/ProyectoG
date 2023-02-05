@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2885,13 +2885,13 @@ MonoBehaviour:
     \u2013 Lead (Gotensfer)\r\nJuli\xE1n David Arroyave P\xE9rez (JayDeeAy)\r\nJuan
     Jos\xE9 Ferrer Due\xF1as (andresferrer)\r\n\r\nSound Designer:\r\nJose Daniel
     Montoya Molina (Panchuel)\r\n\r\nArtist:\r\nCamilo Correa Rojas (Calcium)\r\nJuan
-    Mateo Cuellar (Jatewz)\r\nPaulina Urnhan (MossyGarden)\r\n\r\n\r\nUI/UX:\r\nJuli\xE1n
+    Mateo Cuellar (Jatewz)\r\nPaulina Urhan (MossyGarden)\r\n\r\n\r\nUI/UX:\r\nJuli\xE1n
     David Arroyave P\xE9rez (JayDeeAy)\r\nIsabela Hern\xE1ndez Zapata (Isa_H)\r\n\r\n\r\nGame
     Designers:\r\nJuli\xE1n David Arroyave P\xE9rez (JayDeeAy)\r\nIsabela Hern\xE1ndez
     Zapata (Isa_H)\r\nJuan Jos\xE9 Ferrer Due\xF1as (andresferrer)\r\nNicol\xE1s
     Villa Vargas (The Ash Lord)\r\n\r\n\r\nScript\r\nNicol\xE1s Villa Vargas (The
     Ash Lord)\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nAVOKADO
-    CHUNCH"
+    CRUNCH"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1d51910b31108b43a1df3589d12e6a4, type: 2}
   m_sharedMaterial: {fileID: 1463327277637961190, guid: a1d51910b31108b43a1df3589d12e6a4,

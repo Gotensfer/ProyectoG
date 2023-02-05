@@ -59,27 +59,6 @@ public class AgeManager : MonoBehaviour
         SetAgeWeapon();
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            age++;
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            path = GamePath.Main;
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            path = GamePath.Secondary;
-        }
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-            ChangeAllAgeMapTextures();
-            SetAgeWeapon();
-        }
-    }
-
     void SetAgeWeapon()
     {
         switch (age)
@@ -123,7 +102,10 @@ public class AgeManager : MonoBehaviour
 
         for (int i = 0; i < totalProps; i++)
         {
-            container.GetChild(i).transform.GetComponentInChildren<TextureChanger>().SetEraTextures();
+            if (container.GetChild(i).transform.GetComponentInChildren<TextureChanger>() != null)
+            {
+                container.GetChild(i).transform.GetComponentInChildren<TextureChanger>().SetEraTextures();
+            }            
         }
     }
 
