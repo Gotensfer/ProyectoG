@@ -34,6 +34,9 @@ public class PlayerVitals : MonoBehaviour
     [SerializeField] protected GetEXP_SFX expSfx;
     [SerializeField] protected LevelUpSFX levelSfx;
     
+    //Music 
+    [SerializeField] protected MusicChanger music;
+    
     
     public UnityEvent onDeath = new();
     public UnityEvent onLevelup = new();
@@ -61,7 +64,6 @@ public class PlayerVitals : MonoBehaviour
             deathVfx.Play();
             dieSfx.Die();
             onDeath.Invoke();
-
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
 
             for (int i = 0; i < transform.childCount; i++)
