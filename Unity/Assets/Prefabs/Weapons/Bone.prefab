@@ -48,4 +48,5 @@ MonoBehaviour:
   damage: 1
   boneProyectilePrefab: {fileID: 8000556917173730718, guid: a039e47a08cb655409bef86876f15e9f,
     type: 3}
+  fmodEvent: event:/SFX/Throw Bone
   lifeTime: 4

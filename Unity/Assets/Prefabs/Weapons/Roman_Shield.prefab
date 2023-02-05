@@ -51,3 +51,4 @@ MonoBehaviour:
   orbitRadius: 3
   orbitSpeed: 3
   shieldLifetime: 6
+  fmodEvent: event:/SFX/Orbit Shield

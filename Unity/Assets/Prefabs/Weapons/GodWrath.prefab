@@ -49,3 +49,4 @@ MonoBehaviour:
   GodsWrathProyectilePrefab: {fileID: 5239193275753118027, guid: cf25ef2c3bf595a4c8fd243408dc57e7,
     type: 3}
   lifeTime: 2
+  fmodEvent: event:/SFX/Lightning

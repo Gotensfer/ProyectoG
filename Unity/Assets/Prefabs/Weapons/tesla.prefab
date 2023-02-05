@@ -49,3 +49,4 @@ MonoBehaviour:
   TeslaProyectilePrefab: {fileID: 8000556917173730718, guid: 550c97172e6c52445b60c544345a8999,
     type: 3}
   lifeTime: 2
+  fmodEvent: event:/SFX/Lightning

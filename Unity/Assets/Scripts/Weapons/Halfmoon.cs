@@ -9,11 +9,15 @@ public class Halfmoon : BaseWeapon
 
     public float lifeTime = 1f;
 
+    private FMOD.Studio.EventInstance islamInstance;
+    public string fmodEvent;
+
 
     protected override void Awake()
     {
         base.Awake();
         StartCoroutine(UseWeapon());
+        islamInstance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
     }
 
     IEnumerator UseWeapon()
@@ -39,6 +43,7 @@ public class Halfmoon : BaseWeapon
                 {
                     GameObject newProyectile = Instantiate(HalfmoonProyectilePrefab, transform.parent.position,Quaternion.identity, aim.proyectileHierarchyContainer);
                     newProyectile.GetComponent<StraightProyectile>().Initialize(aim.GetAimDirection(transform.parent, target), lifeTime);
+                    islamInstance.start();
                 }
             }
 

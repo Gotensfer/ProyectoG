@@ -51,3 +51,4 @@ MonoBehaviour:
   IslamSign: {fileID: 8859173304102188575, guid: 00e07311defdd67459d35c0dac6f1819,
     type: 3}
   lifeTime: 5
+  fmodEvent: event:/SFX/Flyes
