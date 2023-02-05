@@ -4952,6 +4952,7 @@ GameObject:
   - component: {fileID: 8060181511030053942}
   - component: {fileID: 8060181511030053941}
   - component: {fileID: 8060181511030053940}
+  - component: {fileID: 6650223566623665549}
   m_Layer: 0
   m_Name: Experience Collectible
   m_TagString: Untagged
@@ -5054,3 +5055,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6650223566623665549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8060181511030053937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af5242f2b007f0243ba706c9c51affc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xpSprite:
+  - {fileID: 1478161786, guid: 8cfb9cb17a0510944a2b975874596c22, type: 3}
+  - {fileID: -1706592625, guid: 8cfb9cb17a0510944a2b975874596c22, type: 3}
+  - {fileID: -1675920872, guid: 8cfb9cb17a0510944a2b975874596c22, type: 3}
+  - {fileID: -774070322, guid: 8cfb9cb17a0510944a2b975874596c22, type: 3}
