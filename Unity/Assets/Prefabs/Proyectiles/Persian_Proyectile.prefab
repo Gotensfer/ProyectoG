@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1458862087355269317}
   - component: {fileID: 1458862087355269312}
   m_Layer: 0
-  m_Name: Shield proyectile
+  m_Name: Persian_Proyectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
