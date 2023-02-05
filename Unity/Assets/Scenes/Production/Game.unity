@@ -7182,7 +7182,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScreenButton: {fileID: 464154349}
   StartText: {fileID: 1703951036}
-  SkipText: {fileID: 0}
   Choose1: {fileID: 85250112}
   Choose2: {fileID: 47966606}
   Choose3: {fileID: 1636454675}
@@ -11918,7 +11917,7 @@ PrefabInstance:
     - target: {fileID: 137434202922388011, guid: 4fa471f1a50a2624a98a02086b8fe13c,
         type: 3}
       propertyPath: level
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 137434202922388011, guid: 4fa471f1a50a2624a98a02086b8fe13c,
         type: 3}
@@ -11933,7 +11932,7 @@ PrefabInstance:
     - target: {fileID: 137434202922388011, guid: 4fa471f1a50a2624a98a02086b8fe13c,
         type: 3}
       propertyPath: neededxpForNextLevel
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 137434202922388017, guid: 4fa471f1a50a2624a98a02086b8fe13c,
         type: 3}

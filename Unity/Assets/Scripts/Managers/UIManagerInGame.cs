@@ -169,6 +169,7 @@ public class UIManagerInGame : MonoBehaviour
 
             Tuto3.DOFade(0, 1).SetUpdate(true);
             TutoBanner.DOFade(0, 1).SetUpdate(true);
+            StartText.gameObject.SetActive(false);
             Time.timeScale = 1;
         });
     }

@@ -20,7 +20,7 @@ public class ExperienceCollectible : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.GetComponent<PlayerVitals>().AddExperience(1);
-            Destroy(gameObject);
+            Destroy(transform.parent.gameObject);
         }
     }
 

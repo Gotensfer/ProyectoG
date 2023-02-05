@@ -17,6 +17,6 @@ public class XpDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        display.text = $"{vitals.Experience * 20}%";
+        display.text = $"{vitals.Experience * 25}%";
     }
 }
