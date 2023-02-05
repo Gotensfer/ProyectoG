@@ -11,6 +11,12 @@ public class UIManagerInGame : MonoBehaviour
     [SerializeField] CanvasGroup Choose1;
     [SerializeField] CanvasGroup Choose2;
     [SerializeField] CanvasGroup Choose3;
+
+    [SerializeField] Image BannerMain;
+    [SerializeField] Sprite Banner1;
+    [SerializeField] Sprite Banner2;
+    [SerializeField] Sprite Banner3;
+    [SerializeField] Sprite Banner4;
     private void Start()
     {
         DOTween.Init();
@@ -111,18 +117,28 @@ public class UIManagerInGame : MonoBehaviour
     {
         switch (AgeManager.age)
         {
+            case Age.Primitive:
+                ChangeBannerImage(Banner1);
+                break;
             case Age.Ancient:
                 OpenChoose1();
+                ChangeBannerImage(Banner2);
                 break;
             case Age.Medieval:
                 OpenChoose2();
+                ChangeBannerImage(Banner3);
                 break;
             case Age.Modern:
                 OpenChoose3();
+                ChangeBannerImage(Banner4);
                 break;
         }
     }
 
+    public void ChangeBannerImage(Sprite Sprite)
+    {
+        BannerMain.sprite = Sprite;
+    }    
 
     public void Unpause()
     {
