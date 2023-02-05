@@ -7,11 +7,15 @@ public class Tesla : BaseWeapon
     [SerializeField] GameObject TeslaProyectilePrefab;
     public float lifeTime = 1f;
 
+    private FMOD.Studio.EventInstance teslaInstance;
+    public string fmodEvent;
 
+    
     protected override void Awake()
     {
         base.Awake();
         StartCoroutine(UseWeapon());
+        teslaInstance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
     }
 
     IEnumerator UseWeapon()
@@ -25,6 +29,7 @@ public class Tesla : BaseWeapon
             {
                 GameObject newProyectile = Instantiate(TeslaProyectilePrefab, target.position,Quaternion.identity, aim.proyectileHierarchyContainer);
                 newProyectile.GetComponent<AirstrikeProyectile>();
+                teslaInstance.start();
             }
 
             target = null;

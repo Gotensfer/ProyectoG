@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ae703960-5b39-4942-beca-27e68c9b17bd}">
+		<property name="assetPath">
+			<value>Music/Moderna/Moderna_Loop.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>21.384</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dc4cd239-1007-45d9-a6b8-b021cc363af2}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -6,6 +6,9 @@ public class Crucifix : BaseWeapon
 {
     [SerializeField] GameObject CrucifixProyectilePrefab;
     [SerializeField] GameObject ChristianSign;
+    
+    private FMOD.Studio.EventInstance cruixInstance;
+    public string fmodEvent;
 
     public float lifeTime = 1f;
 
@@ -13,6 +16,7 @@ public class Crucifix : BaseWeapon
     {
         base.Awake();
         StartCoroutine(UseWeapon());
+        cruixInstance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
     }
 
     IEnumerator UseWeapon()
@@ -38,6 +42,7 @@ public class Crucifix : BaseWeapon
                 {
                     GameObject newProyectile = Instantiate(CrucifixProyectilePrefab, transform.parent.position,Quaternion.identity, aim.proyectileHierarchyContainer);
                     newProyectile.GetComponent<StraightProyectile>().Initialize(aim.GetAimDirection(transform.parent, target), lifeTime);
+                    cruixInstance.start();
                 }
             }
 

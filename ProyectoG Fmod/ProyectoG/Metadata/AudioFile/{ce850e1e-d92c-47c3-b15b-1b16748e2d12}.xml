@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ce850e1e-d92c-47c3-b15b-1b16748e2d12}">
+		<property name="assetPath">
+			<value>SFX/SFX_Ligthning.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.71999999999999997</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{dc4cd239-1007-45d9-a6b8-b021cc363af2}</destination>
+		</relationship>
+	</object>
+</objects>

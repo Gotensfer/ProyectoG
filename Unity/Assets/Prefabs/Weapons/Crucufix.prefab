@@ -50,4 +50,5 @@ MonoBehaviour:
     type: 3}
   ChristianSign: {fileID: 8859173304102188575, guid: d6bab70e03048114a82979ad2a43ae0a,
     type: 3}
+  fmodEvent: event:/SFX/Fireball
   lifeTime: 5

@@ -8,11 +8,15 @@ public class Shields : BaseWeapon
     [SerializeField] float orbitRadius = 3;
     [SerializeField] float orbitSpeed = 2;
     public float shieldLifetime = 2;
+    
+    private FMOD.Studio.EventInstance shieldInstance;
+    public string fmodEvent;
 
     protected override void Awake()
     {
         base.Awake();
         StartCoroutine(UseWeapon());
+        shieldInstance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
     }
 
     IEnumerator UseWeapon()
@@ -26,6 +30,7 @@ public class Shields : BaseWeapon
             {
                 GameObject newProyectile = Instantiate(shieldProyectilePrefab, transform.position, Quaternion.identity, aim.proyectileHierarchyContainer);
                 newProyectile.GetComponent<OrbitProyectile>().Initialize(orbitSpeed, orbitRadius, transform.parent, shieldLifetime);
+                shieldInstance.start();
             }
 
             target = null;
