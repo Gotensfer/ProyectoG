@@ -990,7 +990,7 @@ PrefabInstance:
     - target: {fileID: 137434202922388011, guid: 4fa471f1a50a2624a98a02086b8fe13c,
         type: 3}
       propertyPath: maxHealth
-      value: 50
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 137434202922388017, guid: 4fa471f1a50a2624a98a02086b8fe13c,
         type: 3}
@@ -1051,6 +1051,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 244289531245279868, guid: 4fa471f1a50a2624a98a02086b8fe13c,
+        type: 3}
+      propertyPath: m_TagString
+      value: Weapom
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fa471f1a50a2624a98a02086b8fe13c, type: 3}
