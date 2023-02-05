@@ -980,6 +980,11 @@ PrefabInstance:
       propertyPath: proyectileHierarchyContainer
       value: 
       objectReference: {fileID: 1375788850}
+    - target: {fileID: 137434202922388011, guid: 4fa471f1a50a2624a98a02086b8fe13c,
+        type: 3}
+      propertyPath: maxHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 137434202922388017, guid: 4fa471f1a50a2624a98a02086b8fe13c,
         type: 3}
       propertyPath: m_RootOrder

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7501209125949480522}
   - component: {fileID: 6797137390471075115}
   m_Layer: 6
-  m_Name: Modern age - HevyEnemy - Toothsabre
+  m_Name: Modern age - HeavyEnemy - Toothsabre
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -4,21 +4,12 @@ using UnityEngine;
 
 public class KamikazeEnemy : BaseEnemy
 {
-    // Start is called before the first frame update
-    void Start()
+    protected override void InflictContactDamage(Collider2D collision)
     {
-
+        if (collision.CompareTag("Player"))
+        {
+            collision.GetComponent<PlayerVitals>().ReceiveDamage(baseDamage);
+            Destroy(gameObject);
+        }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
-    private void Kamikaze_action()
-    {
-        Destroy(this);return;
-        
-    }
-    
 }
