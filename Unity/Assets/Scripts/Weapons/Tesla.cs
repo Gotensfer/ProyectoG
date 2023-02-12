@@ -23,7 +23,7 @@ public class Tesla : BaseWeapon
         while (true)
         {
             yield return new WaitForSeconds(cdTime);
-            target = aim.GetClosestEnemy();
+            target = aim.GetRandomEnemy();
 
             if (target != null)
             {

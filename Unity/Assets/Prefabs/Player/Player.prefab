@@ -15210,7 +15210,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -15270,7 +15270,6 @@ MonoBehaviour:
   health: 0
   maxHealth: 5
   level: 1
-  age: 0
   getHitVfx: {fileID: 1578745271286384192, guid: d0d7ae81a935a444e869bed93f395924,
     type: 3}
   deathVfx: {fileID: 2025982000}
@@ -15279,6 +15278,8 @@ MonoBehaviour:
   dieSfx: {fileID: 637943927}
   expSfx: {fileID: 315083381}
   levelSfx: {fileID: 1174838071}
+  music: {fileID: 0}
+  endgamestuff: {fileID: 0}
   onDeath:
     m_PersistentCalls:
       m_Calls: []

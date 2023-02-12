@@ -35,23 +35,33 @@ public class AgeManager : MonoBehaviour
     [SerializeField] Transform backgroundContainer;
     [SerializeField] Transform enemyContainer;
 
+    [SerializeField] Clothing clothing;
+
     public static UnityEvent onAgeChange = new();
 
     private void Start()
     {
         age = Age.Primitive;
-        onAgeChange.AddListener(ChangeAllAgeMapTextures);
-        onAgeChange.AddListener(CleanMapFromEnemies);
     }
 
     public void ChooseMainPath()
     {
         path = GamePath.Main;
+        CommonAgeOperations();
     }
 
     public void ChooseSecondaryPath()
     {
         path = GamePath.Secondary;
+        CommonAgeOperations();
+    }
+
+    void CommonAgeOperations()
+    {
+        ChangeAllAgeMapTextures();
+        CleanMapFromEnemies();
+        ProvideWeapon();
+        clothing.SetAgeClothing();
     }
 
     public void ProvideWeapon()
@@ -88,6 +98,8 @@ public class AgeManager : MonoBehaviour
 
     void ChangeAllAgeMapTextures()
     {
+        print($"{age} - {path}");
+
         SetTextureChangeInArray(prop1Container);
         SetTextureChangeInArray(prop2Container);
         SetTextureChangeInArray(prop3Container);

@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     void Move()
     {
 
-        Vector2 movementVector = controller.controlAxis * baseSpeed * Time.fixedDeltaTime;
+        Vector2 movementVector = controller.controlAxis.normalized * baseSpeed * Time.fixedDeltaTime;
         Vector2 currentPos = new Vector2(transform.position.x, transform.position.y);
         rb.MovePosition(currentPos + movementVector);
     }

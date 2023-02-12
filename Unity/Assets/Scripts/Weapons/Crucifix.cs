@@ -28,21 +28,17 @@ public class Crucifix : BaseWeapon
 
             if (target != null)
             {
-                //GameObject newProyectile = Instantiate(HalfmoonProyectilePrefab, transform.position, Quaternion.identity, aim.proyectileHierarchyContainer);
-                //GameObject newProyectile2 = Instantiate(HalfmoonProyectilePrefab, transform.position, Quaternion.identity, aim.proyectileHierarchyContainer);
-                //GameObject newProyectile3 = Instantiate(HalfmoonProyectilePrefab, transform.position, Quaternion.identity, aim.proyectileHierarchyContainer);
-                
-                //newProyectile.GetComponent<StraightProyectile>().Initialize(aim.GetAimDirection(transform, target), lifeTime);
-                //newProyectile2.GetComponent<StraightProyectile>().Initialize(aim.GetAimDirection(transform, target), lifeTime);
-                //newProyectile3.GetComponent<StraightProyectile>().Initialize(aim.GetAimDirection(transform, target), lifeTime);
-
                 Destroy(Instantiate(ChristianSign, transform.parent.position + (Vector3.up * 1.5f), Quaternion.identity, transform.parent), 1f);
+
+                Vector2 aimDirection = aim.GetAimDirection(transform.parent, target);
 
                 for (int i = 0; i < 3; i++)
                 {
-                    GameObject newProyectile = Instantiate(CrucifixProyectilePrefab, transform.parent.position,Quaternion.identity, aim.proyectileHierarchyContainer);
-                    newProyectile.GetComponent<StraightProyectile>().Initialize(aim.GetAimDirection(transform.parent, target), lifeTime);
+                    GameObject newProyectile = Instantiate(CrucifixProyectilePrefab, transform.parent.position, Quaternion.identity, aim.proyectileHierarchyContainer);
+                    newProyectile.GetComponent<StraightProyectile>().Initialize(aimDirection, lifeTime);
                     cruixInstance.start();
+
+                    yield return new WaitForSeconds(0.25f);
                 }
             }
 

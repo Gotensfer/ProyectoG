@@ -43,7 +43,7 @@ MonoBehaviour:
   Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638112061777156825
+  lastModified: 638117695849414070
   FileSizes:
   - Name: Desktop
     Value: 1344576
@@ -198,7 +198,7 @@ MonoBehaviour:
   Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638112061776937095
+  lastModified: 638117695849224178
   FileSizes:
   - Name: Desktop
     Value: 1574
@@ -239,7 +239,7 @@ MonoBehaviour:
   - {fileID: 4162615153985300034}
   StringsBanks:
   - {fileID: -281814907311300695}
-  cacheTime: 638112061777256750
+  cacheTime: 638117695849444060
   cacheVersion: 131601
 --- !u!114 &581786773509876310
 MonoBehaviour:
@@ -334,7 +334,7 @@ MonoBehaviour:
   Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638112061777256750
+  lastModified: 638117695849444060
   FileSizes:
   - Name: Desktop
     Value: 122400
@@ -408,7 +408,7 @@ MonoBehaviour:
   Path: ../ProyectoG Fmod/ProyectoG/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638112061776867125
+  lastModified: 638117695849204178
   FileSizes:
   - Name: Desktop
     Value: 1888

@@ -901,30 +901,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 925044665}
-        m_TargetAssemblyTypeName: AgeManager, Assembly-CSharp
-        m_MethodName: ProvideWeapon
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 605877134}
-        m_TargetAssemblyTypeName: Clothing, Assembly-CSharp
-        m_MethodName: SetAgeClothing
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1636454673}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -1969,30 +1945,6 @@ MonoBehaviour:
       - m_Target: {fileID: 925044665}
         m_TargetAssemblyTypeName: AgeManager, Assembly-CSharp
         m_MethodName: ChooseMainPath
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 925044665}
-        m_TargetAssemblyTypeName: AgeManager, Assembly-CSharp
-        m_MethodName: ProvideWeapon
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 605877134}
-        m_TargetAssemblyTypeName: Clothing, Assembly-CSharp
-        m_MethodName: SetAgeClothing
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3408,30 +3360,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 925044665}
-        m_TargetAssemblyTypeName: AgeManager, Assembly-CSharp
-        m_MethodName: ProvideWeapon
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 605877134}
-        m_TargetAssemblyTypeName: Clothing, Assembly-CSharp
-        m_MethodName: SetAgeClothing
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 47966604}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -3729,30 +3657,6 @@ MonoBehaviour:
       - m_Target: {fileID: 925044665}
         m_TargetAssemblyTypeName: AgeManager, Assembly-CSharp
         m_MethodName: ChooseMainPath
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 925044665}
-        m_TargetAssemblyTypeName: AgeManager, Assembly-CSharp
-        m_MethodName: ProvideWeapon
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 605877134}
-        m_TargetAssemblyTypeName: Clothing, Assembly-CSharp
-        m_MethodName: SetAgeClothing
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5393,6 +5297,7 @@ MonoBehaviour:
   prop5Container: {fileID: 567371949}
   backgroundContainer: {fileID: 104188391}
   enemyContainer: {fileID: 1656864367}
+  clothing: {fileID: 605877134}
 --- !u!4 &925044666
 Transform:
   m_ObjectHideFlags: 0
@@ -7822,30 +7727,6 @@ MonoBehaviour:
       - m_Target: {fileID: 925044665}
         m_TargetAssemblyTypeName: AgeManager, Assembly-CSharp
         m_MethodName: ChooseSecondaryPath
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 925044665}
-        m_TargetAssemblyTypeName: AgeManager, Assembly-CSharp
-        m_MethodName: ProvideWeapon
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 605877134}
-        m_TargetAssemblyTypeName: Clothing, Assembly-CSharp
-        m_MethodName: SetAgeClothing
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11080,30 +10961,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 925044665}
-        m_TargetAssemblyTypeName: AgeManager, Assembly-CSharp
-        m_MethodName: ProvideWeapon
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 605877134}
-        m_TargetAssemblyTypeName: Clothing, Assembly-CSharp
-        m_MethodName: SetAgeClothing
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 47966604}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -12048,7 +11905,7 @@ PrefabInstance:
     - target: {fileID: 137434202922388011, guid: 4fa471f1a50a2624a98a02086b8fe13c,
         type: 3}
       propertyPath: level
-      value: 9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 137434202922388011, guid: 4fa471f1a50a2624a98a02086b8fe13c,
         type: 3}
@@ -12073,7 +11930,7 @@ PrefabInstance:
     - target: {fileID: 137434202922388011, guid: 4fa471f1a50a2624a98a02086b8fe13c,
         type: 3}
       propertyPath: neededxpForNextLevel
-      value: 4
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 137434202922388017, guid: 4fa471f1a50a2624a98a02086b8fe13c,
         type: 3}
@@ -12134,6 +11991,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 137434202922388020, guid: 4fa471f1a50a2624a98a02086b8fe13c,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fa471f1a50a2624a98a02086b8fe13c, type: 3}

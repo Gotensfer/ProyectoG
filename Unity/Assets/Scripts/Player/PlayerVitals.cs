@@ -115,40 +115,56 @@ public class PlayerVitals : MonoBehaviour
         levelSfx.LevelUp();
         onLevelup.Invoke();
 
-        // Operaci�n de m�dulo ya que cada 10 niveles se cambia de era
-        if (level%10 == 0)
+        if (level == 5)
         {
-            AgeManager.age++; // Sorprendentemente, se puede realizar aritmetica a los enums lmao
-            AgeManager.onAgeChange.Invoke();
-            print(AgeManager.age);
-            health = maxHealth;
+            endgamestuff.SetActive(true);
 
-            if (level == 50)
+            isDead = true;
+            deathVfx.Play();
+            dieSfx.Die();
+            onDeath.Invoke();
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
+
+            for (int i = 0; i < transform.childCount; i++)
             {
-                endgamestuff.SetActive(true);
-
-                isDead = true;
-                deathVfx.Play();
-                dieSfx.Die();
-                onDeath.Invoke();
-                gameObject.GetComponent<BoxCollider2D>().enabled = false;
-
-                for (int i = 0; i < transform.childCount; i++)
+                Transform child = transform.GetChild(i);
+                if (child.CompareTag("Weapon"))
                 {
-                    Transform child = transform.GetChild(i);
-                    if (child.CompareTag("Weapon"))
-                    {
-                        Destroy(child.gameObject);
-                    }
-
+                    Destroy(child.gameObject);
                 }
 
-                Invoke(nameof(BackToMainMenu), 3);
             }
+
+            Invoke(nameof(BackToMainMenu), 3);
+        }
+        else
+        {
+            AgeManager.age++; // Sorprendentemente, se puede realizar aritmética a los enums lmao
+            AgeManager.onAgeChange.Invoke();
+            health = maxHealth;
+
+            RecalculateMaxExperienceForNextAge();
         }
     }
 
-    
+    void RecalculateMaxExperienceForNextAge()
+    {
+        switch (AgeManager.age) // todo: pasarse a un scriptableobject con los settings
+        {
+            case Age.Primitive:
+                neededxpForNextLevel = 10;
+                break;
+            case Age.Ancient:
+                neededxpForNextLevel = 25;
+                break;
+            case Age.Medieval:
+                neededxpForNextLevel = 50;
+                break;
+            case Age.Modern:
+                neededxpForNextLevel = 100;
+                break;
+        }
+    }
 
     void BackToMainMenu()
     {
