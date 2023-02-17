@@ -42,7 +42,7 @@ public class UIManager : MonoBehaviour
     {
         StartText.alpha = 0;
         StartText.gameObject.SetActive(true);
-        ScreenButton.gameObject.SetActive(true);
+        
         Logo.gameObject.SetActive(true);
         
         Logo.DOAnchorPosY(-1650, 6).OnComplete(() => {
@@ -50,6 +50,7 @@ public class UIManager : MonoBehaviour
             .SetEase(Ease.InQuart)
             .SetLoops(-1, LoopType.Yoyo)
             .SetUpdate(true);
+            ScreenButton.gameObject.SetActive(true);
             ScreenButton.onClick.AddListener(CloseWelcome);
         });        
     }
