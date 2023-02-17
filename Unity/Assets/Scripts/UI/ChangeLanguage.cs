@@ -9,8 +9,8 @@ public class ChangeLanguage : MonoBehaviour
 
     public static int Language; //1 = Español , 0 = Ingles // Dios mio - Jf
 
-    #if UNITY_EDITOR
-    
+#if UNITY_EDITOR
+
     private void Update()
     {
         if (Input.GetKey(KeyCode.V))
