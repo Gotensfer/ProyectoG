@@ -59,7 +59,7 @@ public class UIManager : MonoBehaviour
         StartText.gameObject.SetActive(false);
         Buttons.gameObject.SetActive(true);
         StartText.DOKill();
-        Buttons.DOAnchorPos(new Vector2(0, -300), 1);
+        Buttons.DOAnchorPos(new Vector2(0, -270), 1);
 
         ScreenButton.onClick.RemoveListener(CloseWelcome);
         ScreenButton.gameObject.SetActive(false);
@@ -122,5 +122,11 @@ public class UIManager : MonoBehaviour
     }
 
     #endregion
+
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
 
 }
